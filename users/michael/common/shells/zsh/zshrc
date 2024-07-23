@@ -1,0 +1,80 @@
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+
+# bindkey '^i' fzf-tab-complete # eh maybe the above it's not that great, ^e is plenty convenient
+# bindkey '\t' fzf-tab-complete # this one overrides zsh-autocomplete's tab
+
+# Base Setup
+# group completion under the group names
+zstyle ':completion:*:descriptions'     format '[%d]'                           # set descriptions format to enable group support
+zstyle ':completion:*'                  group-name ''                           # Organize completion list in groups (Also doesnt work)
+zstyle ':completion:*'                  list-dirs-first true                    # List Directories first. (Doesnt seem to work)
+zstyle ':completion:*'                  menu no                                 # force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
+zstyle ':completion:*'                  matcher-list 'm:{a-z}={A-za-z}'         # make matching case insensitve
+zstyle ':completion:*'                  list-colors "${(s.:.)LS_COLORS}"        # colors when fzf tab completing
+zstyle ':fzf-tab:*'                     prefix ''                               # Disable prefix for completion matches
+zstyle ':fzf-tab:*'                     switch-group '<' '>'                    # Switch group using `<` and `>`
+
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*'   sort false                              
+
+
+# Accept with Space
+zstyle ':fzf-tab:*'                       fzf-bindings 'space:accept'
+zstyle ':fzf-tab:*'                       accept-line enter
+
+# fzf styling
+zstyle ':fzf-tab:*'                       fzf-min-height 70
+zstyle ':fzf-tab:*'                       fzf-pad 3
+
+# preview styling
+# zstyle ':fzf-tab:complete:*' fzf-flags --preview-window=right,70%,nowrap
+
+
+# disable or override preview for command options and subcommands
+zstyle ':fzf-tab:complete:*:options' fzf-preview
+zstyle ':fzf-tab:complete:*:argument-1' fzf-preview
+
+# Use popup for preview pane when in Tmux
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+zstyle ':fzf-tab:complete:' popup-min-size 150 12
+zstyle ':fzf-tab:complete:' popup-smart-tab yes
+
+# environment variable preview
+zstyle ':fzf-tab:complete:(-command-|-parameter-|-brace-parameter-|export|unset|expand):*' \
+    fzf-preview 'echo ${(P)word}'
+
+
+# More fzf-tab completions
+# enable man previews
+zstyle 'fzf-tab:complete:man:*'           fzf-preview 'man $word | bat --color=always -l man'
+zstyle 'fzf-tab:complete:man:(^options)'  fzf-flags '--preview-window=nohidden,right,65%,wrap'
+# give a preview of commandline arguments when completing `kill`
+zstyle ':completion:*:*:*:*:processes'                     command "ps -u $USER -o pid,user,comm -w -w"
+zstyle ':fzf-tab:complete:(kill|ps):argument-rest'         fzf-flags --preview-window=down:3:wrap
+zstyle ':fzf-tab:complete:(kill|ps):argument-rest'         fzf-preview '[[ $group == "[process ID]" ]] && ps --pid=$word -o cmd --no-headers -w -w'
+
+if [ -n "$TMUX" ]; then
+   enable-fzf-tab
+fi
+
+# Fix alt + backspace so it is different from werase
+my-backward-delete-word () {
+    local WORDCHARS='~!#$%^&*(){}[]<>?+;'
+    zle backward-delete-word
+}
+zle -N my-backward-delete-word
+
+bindkey '\e^?' my-backward-delete-word
+
+
+# # my ll is aliased to eza ..., and without this, zsh gives me weird completions
+# setopt complete_aliases
+
+
+# zstyle ':autocomplete:*complete*:*' insert-unambiguous no
+# zstyle ':autocomplete:*history*:*' insert-unambiguous no
+# zstyle ':autocomplete:menu-search:*' insert-unambiguous no
+# zstyle ':autocomplete:*' delay 0.5
+# zstyle ':completion:*:*' matcher-list 'm:{[:lower:]-}={[:upper:]_}' '+r:|[.]=**'
+

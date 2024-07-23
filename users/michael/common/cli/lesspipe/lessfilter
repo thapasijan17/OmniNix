@@ -1,0 +1,44 @@
+#! /usr/bin/env bash
+has_cmd() {
+	for opt in "$@"; do
+		command -v "$opt" >/dev/null
+	done
+}
+
+mime=$(file -Lbs --mime-type "$1")
+category=${mime%%/*}
+kind=${mime##*/}
+ext=${1##*.}
+if [ "$kind" = json ]; then
+	if has_cmd jq; then
+		jq -Cr . "$1"
+	fi
+elif [ -d "$1" ]; then
+	if [ "$(command -v eza)" ]; then
+    	eza --sort=type --long --no-time --color=always --icons   --git "$1"
+	fi
+elif [ "$kind" = octet-stream ]; then
+  if [ "$(command -v hx)" ]; then
+    hx -t 1 -l 512 "$1"
+  fi
+elif [ "$category" = image ]; then
+	if [ "$(command -v chafa)" ]; then
+		chafa -f symbols -s "${FZF_PREVIEW_COLUMNS}x${FZF_PREVIEW_LINES}" "$1"
+	fi
+elif [ "$category" = text ]; then
+	if [ "$(command -v bat)" ]; then
+		bat -P --style 'plain,changes' --color=always "$1"
+  fi
+elif [ "$kind" = pdf ]; then
+	if has_cmd sed; then
+		sed "s/\f/$(hr ─)\n/g"
+	fi
+elif [ "$kind" = rfc822 ]; then
+	if has_cmd bat; then
+		bat --color=always -lEmail "$1"
+	fi
+else
+	lesspipe.sh "$1" | bat --color=always
+fi
+
+

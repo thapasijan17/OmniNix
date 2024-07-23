@@ -1,0 +1,6 @@
+{ pkgs, specialArgs, ... }:
+{
+  imports = [
+    ../darwin
+  ];
+}
