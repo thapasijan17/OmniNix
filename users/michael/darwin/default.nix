@@ -12,6 +12,9 @@
       ../common/desktop/terminals
 
       ../common/home.nix
+
+
+      ./sops.nix
     ];
 
   # Home manager configs

@@ -67,6 +67,16 @@
       flake = false;
     };
 
+    #################### Personal Repositories ####################
+
+    # Private secrets repo.
+    # Authenticate via ssh and use shallow clone
+    nix-secrets = {
+      url = "git+ssh://git@github.com/mcgilly17/nix-secrets.git?ref=main&shallow=1";
+      flake = false;
+    };
+
+
   };
 
   outputs =

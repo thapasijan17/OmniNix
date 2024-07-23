@@ -23,6 +23,11 @@
         wget
         curl # Will also install with brew on MacOS
         coreutils
+
+        sops
+        ssh-to-age
+        age
+
       ];
   };
 

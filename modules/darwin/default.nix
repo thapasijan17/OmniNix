@@ -2,6 +2,6 @@
   imports =
     specialArgs.myLibs.scanPaths ./.
     ++ [
-      ../core.nix
+      ../common/core.nix
     ];
 }
