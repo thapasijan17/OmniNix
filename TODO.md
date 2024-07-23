@@ -7,8 +7,8 @@
 - [ ] Configure ZelliJ or tmux
 - [ ] auto set my dock <https://github.com/dustinlyons/nixos-config/blob/main/flake.nix>
 - [x] configure NeoVim
-- [ ] configure secrets
-- [ ] configure ssh
+- [x] configure secrets
+- [x] configure ssh
 - [x] checkout Zoxide cli tool
 - [ ] checkout navi cli tool
 - [x] configure git
