@@ -3,6 +3,7 @@
 ##  Ongoing
 
 - [ ] manage autocompletions for yabai and other tools - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/Amar1729/yabai-zsh-completions/blob/main/src/_yabai>
+- [ ] Add md viewer to fzf-tap
 - [ ] Research and Configure ZelliJ or Tmux
 - [ ] Configure LSP and more advanced features in NixVim
 - [ ] Configure first nixOS machine

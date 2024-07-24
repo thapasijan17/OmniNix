@@ -16,7 +16,6 @@
     ./markdown-preview.nix # markedown preview
     ./mini.nix # swiss army knife for neovim all written in lua
     ./neotest.nix # testing plugin
-    ./none-ls.nix # LSP from nul-ls
     ./nvim-colorizer.nix # color highlighting plugin
     ./nvim-surround.nix # helping surround text - similar to autopair but works around existing text
     ./oil.nix # file management in a simple buffer!

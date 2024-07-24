@@ -6,7 +6,7 @@
       backgroundColour = "#000000";
       fps = 60;
       render = "default";
-      timeout = 500;
+      timeout = 1000;
       topDown = true;
     };
 
