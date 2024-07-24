@@ -13,9 +13,17 @@ if [ "$kind" = json ]; then
 	if has_cmd jq; then
 		jq -Cr . "$1"
 	fi
+elif [[ "$ext" =~ md|markdown ]]; then
+	if [ "$(command -v mdcat)" ]; then
+    mdcat "$1"
+  fi
 elif [ -d "$1" ]; then
 	if [ "$(command -v eza)" ]; then
-    	eza --sort=type --long --no-time --color=always --icons   --git "$1"
+		eza --sort=type --long --no-time --color=always --icons --git "$1"
+	fi
+elif [[ "$kind" == "zip" ]]; then
+	if [ "$(command -v 7z)" ]; then
+		7z l "$1" | tail -n +15
 	fi
 elif [ "$kind" = octet-stream ]; then
   if [ "$(command -v hx)" ]; then
@@ -40,5 +48,3 @@ elif [ "$kind" = rfc822 ]; then
 else
 	lesspipe.sh "$1" | bat --color=always
 fi
-
-

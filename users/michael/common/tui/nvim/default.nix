@@ -3,9 +3,9 @@
     inputs.nixvim.homeManagerModules.nixvim
 
     #Base Configs
+    ./keymaps.nix
     ./sets.nix
     ./colorschemes.nix
-    ./keymaps.nix
 
     # Plugins
     ./plugins

@@ -54,6 +54,7 @@
     abduco # lightweight session management
     bottom # fancy version of `top` with ASCII graphs
     croc # File transfer between computers securely and easily
+    mdcat # cat for markdown files
 
     # Networking
     nmap # Port scanning utility for large networks https://nmap.org/
