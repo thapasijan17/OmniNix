@@ -2,15 +2,19 @@
 
 ##  Ongoing
 
-- [ ] Finish Configuring ZSH - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/MaJinjie/dotfiles/blob/b68ab9325ce790d41e0222eb4232ed4b8fda7c8c/.config/zsh/zsh.d/00-options.zsh>
 - [ ] manage autocompletions for yabai and other tools - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/Amar1729/yabai-zsh-completions/blob/main/src/_yabai>
-- [ ] Configure ZelliJ or tmux
+- [ ] Research and Configure ZelliJ or Tmux
+- [ ] Configure LSP and more advanced features in NixVim
+- [ ] Configure first nixOS machine
+- [ ] Update secrets management to do host level decryption (for linux machines)
+- [ ] Learn about using nix for development environments
 - [ ] auto set my dock <https://github.com/dustinlyons/nixos-config/blob/main/flake.nix>
+- [ ] checkout navi cli tool
+- [ ] Advanced Configuring ZSH - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/MaJinjie/dotfiles/blob/b68ab9325ce790d41e0222eb4232ed4b8fda7c8c/.config/zsh/zsh.d/00-options.zsh>
 - [x] configure NeoVim
 - [x] configure secrets
 - [x] configure ssh
 - [x] checkout Zoxide cli tool
-- [ ] checkout navi cli tool
 - [x] configure git
 - [x] Configure Starship - <https://github.com/malob/nixpkgs/blob/master/home/starship-symbols.nix> / <https://dev.to/therubberduckiee/how-to-configure-starship-to-look-exactly-like-p10k-zsh-warp-h9h>
 - [x] Set caps lock as ctrl <https://github.com/LnL7/nix-darwin/issues/55>
@@ -27,7 +31,7 @@
 
 ## Read more
 
-## ZSH / fzf
+### ZSH / fzf
 
 <https://github.com/juampivallejo/dotfiles/blob/5989eab7ef94455c9a35c5b8997739799536a44d/home-manager/lessfilter.sh>
 <https://thevaluable.dev/zsh-completion-guide-examples/>

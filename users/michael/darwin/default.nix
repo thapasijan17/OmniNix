@@ -4,7 +4,7 @@
     (specialArgs.myLibs.scanPaths ./.)
     ++ [
       # Common home manager configs for any envinroment
-      ../common/cli
+      ../common/tui
       ../common/shells
 
       # I can safely bring desktop configs into any darwin env as I dont run MacOS servers.

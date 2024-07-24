@@ -1,6 +1,6 @@
 # McGilly17's Nix Configs
 
-Please dont take any of this repo as my own work. I am merely standing on the shoulders of giants like Ryan Yin, Emergent Mind, Mysterio77 and about 100 others. My dotfiles are a frankenstein from many of these amazing engineers.
+Please dont take any of this repo as my own work. I am merely standing on the shoulders of giants like Ryan Yin, Emergent Mind, Mysterio77 and about 100 others. My dotfiles are a frankenstein made from many of [these](#acknowledgements) amazing engineers work.
 
 ## Table of Contents
 

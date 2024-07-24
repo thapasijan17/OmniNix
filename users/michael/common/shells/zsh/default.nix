@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }: {
+{ pkgs, config, ... }: {
 
   programs.zsh = {
     enable = true;
@@ -80,6 +80,7 @@
 
     shellAliases = {
       ll = "eza --group --header --group-directories-first --long --git --all --icons --sort name";
+      lt = "eza --tree --level=2 --long --icons --git";
       cat = "bat"; # better cat - bat
       cd = "z"; # better cd - zoxide
       tig = "gitui"; # my fingers just do this too often
