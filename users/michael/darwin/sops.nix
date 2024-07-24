@@ -18,12 +18,8 @@ in
     validateSopsFiles = false;
 
     secrets = {
-      "private_keys/michael" = {
-        path = "${homeDirectory}/.ssh/id_ed25519_nix";
-      };
-
-      # "ssh_keys/sephiroth" = {
-      #   path = "${homeDirectory}/.ssh/id_sephiroth";
+      # "private_keys/michael" = {
+      #   path = "${homeDirectory}/.ssh/id_ed25519_nix";
       # };
     };
   };
