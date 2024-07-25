@@ -26,6 +26,7 @@ Please dont take any of this repo as my own work. I am merely standing on the sh
   - `sephiroth` - M1 Macbook Air 2021
 - `users/<user>` - Home-manager configurations, built automatically during host rebuilds.
   - `common` - shared home-manager configurations consumed the user's machine specific ones present for user across all machines. This is a hard rule!
+    - `core` - Core tools and configs for terminal 
     - `tui` - Home-manager configurations for anything CLI or TUI
     - `desktop` - Home-manager configurations for anything desktop, these will only be imported by machines that run a GUI
     - `shells` - Different shell configurations. Currently only zsh is configured here.

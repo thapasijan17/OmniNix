@@ -7,7 +7,6 @@ in
     enable = true;
     enableZshIntegration = true;
 
-
     settings = {
       directory.fish_style_pwd_dir_length = 1; # turn on fish directory truncation
       memory_usage.disabled = true; # because it includes cached memory it's reported as full a lot
