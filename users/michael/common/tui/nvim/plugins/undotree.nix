@@ -1,9 +1,4 @@
-{ config
-, pkgs
-, host
-, user
-, ...
-}: {
+{
   programs.nixvim = {
     plugins.undotree = {
       enable = true;

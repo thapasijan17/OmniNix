@@ -1,4 +1,10 @@
-{
+{ pkgs, ... }: {
+  home.packages = with pkgs; [
+    selene
+    eslint_d
+    nodePackages.jsonlint
+    checkstyle
+  ];
   programs.nixvim = {
 
     plugins.lint = {

@@ -13,6 +13,7 @@
   };
 
   home.packages = with pkgs; [
+
     # Just install these with no config
     # Search here for config options for each. https://mynixos.com/home-manager/options/programs
 
@@ -75,11 +76,13 @@
     nixpkgs-fmt # Nix code formatter for nixpkgs
     deadnix # scan nix files for dead code
     node2nix # generate Nix expressions to build NPM packages
+    alejandra # Nix formatter
 
     # Development Specific
     jq #json in the terminal
     cachix # adding/managing alternative binary caches hosted by Cachix
     yq-go # yaml processor https://github.com/mikefarah/yq
+    prettierd # Prettier, as a daemon, for improved formatting speed
     kubetail
     devbox
     graphviz
@@ -87,7 +90,7 @@
     rclone
     socat
     neofetch
-
+    devenv
 
     # Git speific addons
     bfg-repo-cleaner # Removes large or troublesome blobs in a git repository like git-filter-branch does, but faster

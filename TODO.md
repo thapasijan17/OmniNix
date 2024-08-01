@@ -11,6 +11,7 @@
 - [ ] update/config starship prompt for development envs and cloud providers
 - [ ] auto set my dock <https://github.com/dustinlyons/nixos-config/blob/main/flake.nix>
 - [ ] checkout cli/tui tools lazydocker, navi
+- [ ] fix autocomplete on zsh so that complete isnt done with only right arrow
 - [ ] Advanced Configuring ZSH - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/MaJinjie/dotfiles/blob/b68ab9325ce790d41e0222eb4232ed4b8fda7c8c/.config/zsh/zsh.d/00-options.zsh>
 - [x] Add md viewer to fzf-tap
 - [x] configure NeoVim

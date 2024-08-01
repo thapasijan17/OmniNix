@@ -1,4 +1,12 @@
-{
+{ pkgs, ... }: {
+  home.packages = with pkgs; [
+    prettierd
+    nodePackages.prettier
+    google-java-format
+    black
+    rustfmt
+  ];
+
   programs.nixvim = {
 
     plugins.conform-nvim = {
@@ -12,6 +20,7 @@
         typescript = [ [ "prettierd" "prettier" ] ];
         typescriptreact = [ [ "prettierd" "prettier" ] ];
         java = [ "google-java-format" ];
+        json = [ "jq" ];
         python = [ "black" ];
         lua = [ "stylua" ];
         nix = [ "alejandra" ];

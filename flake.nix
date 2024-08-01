@@ -49,6 +49,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+
     # use nightly neovim
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
 

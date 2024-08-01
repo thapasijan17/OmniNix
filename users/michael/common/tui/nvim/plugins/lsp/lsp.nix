@@ -1,4 +1,8 @@
-{
+{ pkgs, ... }: {
+  home.packages = with pkgs; [
+    typescript
+  ];
+
   programs.nixvim = {
 
     plugins = {
@@ -28,7 +32,7 @@
           };
           nil-ls = { enable = true; };
           tsserver = {
-            enable = false;
+            enable = false; #using typescript-tools instead right now
             filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
             extraOptions = {
               settings = {
@@ -58,9 +62,9 @@
             };
           };
           eslint = { enable = true; };
+          emmet-ls = { enable = true; };
           pyright = { enable = true; };
           ruff-lsp = { enable = true; };
-
           rust-analyzer = {
             enable = true;
             installCargo = true;

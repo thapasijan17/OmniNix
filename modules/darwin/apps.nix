@@ -67,7 +67,7 @@
 
       # Utilities
       "raycast" # Better Spotlight
-      "mullvadvpn"
+      "mullvadvpn" # VPN software
       "cleanmymac" # The ultimate cleaner for your Mac https://macpaw.com"
 
       ## Internet Apps
@@ -90,8 +90,6 @@
 
       ## Messaging and Communication
       "whatsapp" #Desktop Whatsapp client"
-
-
 
       # "launchrocket" #LaunchRocket. A Mac PreferencePane for managing services with launchd https://github.com/jimbojsb/launchrocket"
       # "suspicious-package" #An Application for Inspecting macOS Installer Packages https://www.mothersruin.com/software/SuspiciousPackage/"
