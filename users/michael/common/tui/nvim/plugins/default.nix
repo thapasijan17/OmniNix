@@ -11,6 +11,7 @@
     ./buffer.nix # buffer management keymaps and bufferline
     ./better-escape.nix # plugin to enable escaping insert mode with keys like jj and reducing the delay
     ./dap.nix # debugger
+    ./eyeliner.nix # faster highlighting with f and F
     ./hardtime.nix # plugin to enforce good vim movements
     ./harpoon.nix # plugin from primeagen for managing lists of files you need to work on
     ./illuminate.nix # highlights the same word currently under the cursor
