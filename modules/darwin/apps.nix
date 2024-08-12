@@ -18,6 +18,7 @@
     # darwin only apps
     utm # virtual machines
     vscode
+    dockutil
   ];
 
   environment.variables = {
