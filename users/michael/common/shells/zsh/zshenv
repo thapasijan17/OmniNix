@@ -7,7 +7,6 @@ export FZF_TMUX_OPTS="-p"
 
 export LESSOPEN='|~/.config/.lessfilter %s'
 
-export ZELLIJ_AUTO_EXIT=true
 
 export BAT_STYLE=numbers,changes
 

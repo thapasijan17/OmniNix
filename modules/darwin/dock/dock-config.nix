@@ -5,7 +5,6 @@
 }: let
   user = myVars.users.michael.username;
 in {
-
   # Fully declarative dock using the latest from Nix Store
   local = {
     dock.enable = true;
