@@ -1,7 +1,6 @@
 {
   description = "Mcgilly17 nix configuration WIP - will support MacOS, Linux and WSL";
 
-
   inputs = {
     #################### Official Package Sources ####################
 
@@ -49,10 +48,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-
     # use nightly neovim
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-
 
     #################### Non Flakes ####################
     homebrew-bundle = {
@@ -76,50 +73,46 @@
       url = "git+ssh://git@github.com/mcgilly17/nix-secrets.git?ref=main&shallow=1";
       flake = false;
     };
-
-
   };
 
-  outputs =
-    { self
-    , nixpkgs
-    , darwin
-    , home-manager
-    , ...
-    } @ inputs:
-    let
-      inherit (nixpkgs) lib;
-      inherit (self) outputs;
+  outputs = {
+    self,
+    nixpkgs,
+    darwin,
+    home-manager,
+    ...
+  } @ inputs: let
+    inherit (nixpkgs) lib;
+    inherit (self) outputs;
 
-      forAllSystems = lib.genAttrs [
-        "aarch64-darwin"
-        #"aarch64-linux"
-        "x86_64-darwin"
-        #"x86_64-linux"
-      ];
+    forAllSystems = lib.genAttrs [
+      "aarch64-darwin"
+      #"aarch64-linux"
+      "x86_64-darwin"
+      #"x86_64-linux"
+    ];
 
-      myVars = import ./resources/vars.nix { inherit inputs lib; };
-      myLibs = import ./resources/libs.nix { inherit lib; };
+    myVars = import ./resources/vars.nix {inherit inputs lib;};
+    myLibs = import ./resources/libs.nix {inherit lib;};
 
-      # Add custom libs, vars, nixpkgs instance, and all the inputs to mySpecialArgs,
-      # so they can be used in all downstream modules.
-      specialArgs = { inherit inputs outputs myVars myLibs nixpkgs; };
-    in
-    {
-      overlays = import ./overlays { inherit inputs outputs; };
-      #packages = forAllSystems (pkgs: import ./pkgs {inherit pkgs;});
-      formatter = forAllSystems (pkgs: pkgs.alejandra);
+    # Add custom libs, vars, nixpkgs instance, and all the inputs to mySpecialArgs,
+    # so they can be used in all downstream modules.
+    specialArgs = {inherit inputs outputs myVars myLibs nixpkgs;};
+  in {
+    overlays = import ./overlays {inherit inputs outputs;};
+    #packages = forAllSystems (pkgs: import ./pkgs {inherit pkgs;});
+    formatter = forAllSystems (pkgs: pkgs.alejandra);
 
-      # MacBook Air M1 20202
-      darwinConfigurations = {
-        sephiroth = darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
-          inherit specialArgs;
+    # MacBook Air M1 20202
+    darwinConfigurations = {
+      sephiroth = darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        inherit specialArgs;
 
-          modules = [
-            ./hosts/sephiroth
-          ];
-        };
+        modules = [
+          ./hosts/sephiroth
+        ];
       };
     };
+  };
 }
