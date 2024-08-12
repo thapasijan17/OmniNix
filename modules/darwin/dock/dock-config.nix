@@ -9,12 +9,12 @@ in {
   local = {
     dock.enable = true;
     dock.entries = [
-      {path = "/System/Applications/Messages.app/";}
-      {path = "/System/Applications/Facetime.app/";}
+      {path = "/System/Applications/Notion.app/";}
+      {path = "/System/Applications/Chrome.app/";}
       {
         path = "${config.users.users.${user}.home}/Downloads";
         section = "others";
-        options = "--sort name --view grid --display folder";
+        options = "--sort name --view list --display folder";
       }
     ];
   };
