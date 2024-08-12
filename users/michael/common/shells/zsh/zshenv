@@ -7,6 +7,9 @@ export FZF_TMUX_OPTS="-p"
 
 export LESSOPEN='|~/.config/.lessfilter %s'
 
+export ZELLIJ_AUTO_ATTACH=true
+export ZELLIJ_AUTO_EXIT=true
+
 export BAT_STYLE=numbers,changes
 
 # for some reason this needs to be explicit on mac OS, this will need to be fixed for linux builds

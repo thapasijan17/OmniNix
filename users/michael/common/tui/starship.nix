@@ -41,7 +41,7 @@ in
       shlvl = {
         format = "[$shlvl]($style) ";
         style = "bold cyan";
-        threshold = 2;
+        threshold = 3;
         repeat = true;
         disabled = false;
       };

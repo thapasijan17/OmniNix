@@ -16,7 +16,7 @@ zstyle ':fzf-tab:*'                     prefix ''                               
 zstyle ':fzf-tab:*'                     switch-group '<' '>'                    # Switch group using `<` and `>`
 
 # disable sort when completing `git checkout`
-zstyle ':completion:*:git-checkout:*'   sort false                              
+zstyle ':completion:*:git-checkout:*'   sort false
 
 
 # Accept with Space
@@ -49,6 +49,7 @@ zstyle ':fzf-tab:complete:(-command-|-parameter-|-brace-parameter-|export|unset|
 # enable man previews
 zstyle 'fzf-tab:complete:man:*'           fzf-preview 'man $word | bat --color=always -l man'
 zstyle 'fzf-tab:complete:man:(^options)'  fzf-flags '--preview-window=nohidden,right,65%,wrap'
+
 # give a preview of commandline arguments when completing `kill`
 zstyle ':completion:*:*:*:*:processes'                     command "ps -u $USER -o pid,user,comm -w -w"
 zstyle ':fzf-tab:complete:(kill|ps):argument-rest'         fzf-flags --preview-window=down:3:wrap
@@ -67,6 +68,17 @@ zle -N my-backward-delete-word
 
 bindkey '\e^?' my-backward-delete-word
 
+if [[ -z "$ZELLIJ" ]]; then
+    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+        zellij attach -c
+    else
+        zellij
+    fi
+
+    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+        exit
+    fi
+fi
 
 # # my ll is aliased to eza ..., and without this, zsh gives me weird completions
 # setopt complete_aliases
@@ -77,4 +89,3 @@ bindkey '\e^?' my-backward-delete-word
 # zstyle ':autocomplete:menu-search:*' insert-unambiguous no
 # zstyle ':autocomplete:*' delay 0.5
 # zstyle ':completion:*:*' matcher-list 'm:{[:lower:]-}={[:upper:]_}' '+r:|[.]=**'
-
