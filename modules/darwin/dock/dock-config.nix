@@ -9,8 +9,8 @@ in {
   local = {
     dock.enable = true;
     dock.entries = [
-      {path = "/System/Applications/Notion.app/";}
-      {path = "/System/Applications/Chrome.app/";}
+      {path = "/Applications/Notion.app/";}
+      {path = "/Applications/Chrome.app/";}
       {
         path = "${config.users.users.${user}.home}/Downloads";
         section = "others";
