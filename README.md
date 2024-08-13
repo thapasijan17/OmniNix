@@ -65,7 +65,8 @@ The strucutre allows for many hosts (nixos, darwin and probably WS2?) and many u
 |                             | Linux          | MacOS          |
 | --------------------------- | -------------- | -------------- |
 | **Shell:**                  | zsh + Starship | zsh + Starship |
-| **WM:**                     | TODO           | Yabai + skhd   |
+| **WM:**                     | TODO           | Yabai          |
+| **Launcher:**               | TODO           | skhd           |
 | **Editor:**                 | NixVim         | NixVim         |
 | **Terminal Emulator:**      | Kitty + Zellij | Kitty + Zellij |
 | **Browser:**                | Chrome         | Chrome         |
