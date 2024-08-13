@@ -71,9 +71,10 @@ The strucutre allows for many hosts (nixos, darwin and probably WS2?) and many u
 
 ## Usage
 
-> [!IMPORTANT] > **Disclaimer:** _This is not a "community framework" or "NixOS distribution"._
+> [!IMPORTANT]
+> **Disclaimer:** _This is not a "community framework" or "NixOS distribution"._
 > Please do not use it like one. It is a relatively poor and somewhat frankenstein
-> implementation from many, many people (see [Acknowledgements](#Acknowledgements)) who are far smarter
+> implementation from many, many people (see [Acknowledgements](#acknowledgements)) who are far smarter
 > than I.
 >
 > That said, I would absolutely love to talk more about nix and configs. If anyone would like to critique,
