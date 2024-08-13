@@ -84,7 +84,8 @@ The strucutre allows for many hosts (nixos, darwin and probably WS2?) and many u
 
 See [TODOs](/TODO.md)
 
-In short, I will be constantly tinkering with these configs. I want to improve the use of secrets, investigate remote deployments, use Just files and many other fun things.
+In short, I will be constantly tinkering with these configs. I want to improve the use of secrets, investigate remote deployments,
+use Just files and many other fun things.
 
 ## Acknowledgements
 
