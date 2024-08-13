@@ -1,8 +1,8 @@
-{ specialArgs, ... }: {
+{specialArgs, ...}: {
   imports =
     specialArgs.myLibs.scanPaths ./.
-    ++ [
-      ../common/core.nix
-      ./dock/dock-config.nix
-    ];
+    ++ (map myLibs.relativeToRoot [
+      "modules/common/core.nix"
+      "resources/lib/dock.nix"
+    ]);
 }
