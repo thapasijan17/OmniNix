@@ -1,6 +1,6 @@
-{specialArgs, ...}: {
+{myLibs, ...}: {
   imports =
-    specialArgs.myLibs.scanPaths ./.
+    myLibs.scanPaths ./.
     ++ (map myLibs.relativeToRoot [
       "modules/common/core.nix"
       "resources/lib/dock.nix"

@@ -92,8 +92,8 @@
       #"x86_64-linux"
     ];
 
-    myVars = import ./resources/vars {inherit inputs lib;};
-    myLibs = import ./resources/lib {inherit lib;};
+    myVars = import ./resources/vars.nix {inherit inputs lib;};
+    myLibs = import ./resources/libs.nix {inherit lib;};
 
     # Add custom libs, vars, nixpkgs instance, and all the inputs to mySpecialArgs,
     # so they can be used in all downstream modules.
