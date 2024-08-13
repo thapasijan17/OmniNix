@@ -5,6 +5,7 @@
 - [ ] manage autocompletions for yabai and other tools - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/Amar1729/yabai-zsh-completions/blob/main/src/_yabai>
 - [ ] Configure first nixOS machine
 - [ ] Configure Just
+- [ ] fix neovim markdown formatting
 - [ ] Configure remote deployment and server specific deployments
 - [ ] Update dock config to allow for spacers
 - [ ] Update secrets management to do host level decryption (for linux machines)

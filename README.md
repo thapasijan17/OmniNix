@@ -107,4 +107,4 @@ Thank you to the amazing engineers work that I have built my dotfiles on top of
 - [andreykaipov] (<https://github.com/andreykaipov/nix>)
 - [martaver] (<https://github.com/martaver/dotfiles>)
 - [mtyurt] (<https://github.com/mtyurt/dotfiles>)
-- [redyf] (https://github.com/redyf/Neve)
+- [redyf] (<https://github.com/redyf/Neve>)
