@@ -7,7 +7,7 @@
       flavor = "macchiato";
     };
 
-    #  https://k9scli.io/topics/config/
+    # https://k9scli.io/topics/config/
     settings.k9s = {
       ui = {
         # headless = true;

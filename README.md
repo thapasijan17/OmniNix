@@ -76,6 +76,16 @@ The strucutre allows for many hosts (nixos, darwin and probably WS2?) and many u
 
 ---
 
+## Secrets Management
+
+Secrets for this config are stored in a private repository called nix-secrets that is pulled in as a flake input and managed using the sops-nix tool.
+
+If you have any questions about secrets using nix. Please see the following epic resources:
+
+- [EmergentMind's Spectacular Youtube Series](https://www.youtube.com/watch?v=6EMNHDOY-wo)
+- [LGUG2Z's Epic blog post that explains the different options you have when encrypting with nix](https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/)
+- Ryan4Yin and Misterio77 also have implementations that are worth looking at.
+
 ## Usage
 
 > [!IMPORTANT]
@@ -84,7 +94,7 @@ The strucutre allows for many hosts (nixos, darwin and probably WS2?) and many u
 > implementation from many, many people (see [Acknowledgements](#acknowledgements)) who are far smarter
 > than I.
 >
-> That said, I would absolutely love to talk more about nix and configs. If anyone would like to critique,
+> That said, I would absolutely love to talk and [learn](#questions) more about nix and configs. If anyone would like to critique,
 > comment, contribute. Please feel free in Issues or PRs.
 
 ## Ongoing
@@ -94,9 +104,28 @@ See [TODOs](/TODO.md)
 In short, I will be constantly tinkering with these configs. I want to improve the use of secrets, investigate remote deployments,
 use Just files and many other fun things.
 
+## Questions
+
+I have about 1million questions on Nix and will ask them in due course on discourse. However, if anyone stumbles upon this and has answers, please let me know!
+
+- Is there anywhere documented in the nix world a place where I can see how maintainers of NixPkgs convert the configurations in nix into the format the underlying package needs. For Example: [gitui](https://github.com/extrawurst/gitui), you can pass the key `keyConfig` into the [nix config](/users/michael/common/tui/gitui.nix), it is a multi line string with all the keybindings. Now, in the [Gitui NixPkgs](https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/gi/gitui/package.nix#L56) to me, it wasnt immediately obvious that this was how you do this. Is there a dictionary of these things somewhere that I havent found?
+- When developing actively on this set of configs, every change I make, I have to run a darwin-rebuild and switch out to the new config. When making many small changes this can be pretty time intensive. Is there a better way when in active development (i.e setting up ones NeoVim configs) that allows for much quicker iteration before then migrating to the full nix config?
+
+## Guidance and Resources
+
+If you are remotely interested in Nix and configs, I found the below a pretty good starting point. I then did the vast majority of my learning
+by looking through other peoples configs and watching @EmergentMind and @VimJoyer's amazing youtube content.
+
+- [NixOS & Flakes Book](https://nixos-and-flakes.thiscute.world/) - an excellent introductory book by Ryan Yin
+- [Official Nix Documentation](https://nix.dev)
+  - [Best practices](https://nix.dev/guides/best-practices)
+- [Noogle](https://noogle.dev/) - Nix API reference documentation.
+- [MyNixOS](https://mynixos.com/) - Very helpful documentation on packages, also helpful videos etc
+- [Official NixOS Wiki](https://wiki.nixos.org/)
+
 ## Acknowledgements
 
-Thank you to the amazing engineers work that I have built my dotfiles on top of
+Thank you to the amazing engineers work that I have built my dotfiles on top of, these are but a few!
 
 - [Misterio77] (<https://github.com/Misterio77/nix-config?tab=readme-ov-file>)
 - [EmergentMind] (<https://github.com/EmergentMind/nix-config>)

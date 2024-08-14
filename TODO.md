@@ -5,6 +5,9 @@
 - [ ] manage autocompletions for yabai and other tools - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/Amar1729/yabai-zsh-completions/blob/main/src/_yabai>
 - [ ] Configure first nixOS machine
 - [ ] Configure Just
+- [ ] Extract NixVim configs out into a standalon repo
+- [ ] Explore bar options for mac (spacebar from Calum MacRae)
+- [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)
 - [ ] fix neovim markdown formatting
 - [ ] Configure remote deployment and server specific deployments
 - [ ] Update dock config to allow for spacers
