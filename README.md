@@ -124,6 +124,8 @@ by looking through other peoples configs and watching @EmergentMind and @VimJoye
 - [Noogle](https://noogle.dev/) - Nix API reference documentation.
 - [MyNixOS](https://mynixos.com/) - Very helpful documentation on packages, also helpful videos etc
 - [Official NixOS Wiki](https://wiki.nixos.org/)
+- [EmergentMind's Youtube](https://www.youtube.com/@Emergent_Mind)
+- [VimJoyer's Youtube](https://www.youtube.com/@vimjoyer)
 
 ## Acknowledgements
 
