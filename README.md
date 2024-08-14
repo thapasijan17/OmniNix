@@ -7,6 +7,7 @@
 Please dont take any of this repo as my own work. I am merely standing on the shoulders of giants like Ryan Yin, Emergent Mind, Mysterio77 and about 100 others. My dotfiles are a frankenstein made from many of [these](#acknowledgements) amazing engineers work.
 
 > [!IMPORTANT]
+>
 > **Disclaimer:** _This config is currently only setup to work with one macOS host_ some boilerplate
 > is baked in for when I expand the configs to my WS2 rig, Linux machines and servers.
 
@@ -62,17 +63,17 @@ The strucutre allows for many hosts (nixos, darwin and probably WS2?) and many u
 
 ---
 
-|                             | Linux          | MacOS          |
-| --------------------------- | -------------- | -------------- |
-| **Shell:**                  | zsh + Starship | zsh + Starship |
-| **WM:**                     | TODO           | Yabai          |
-| **Launcher:**               | TODO           | skhd           |
-| **Editor:**                 | NixVim         | NixVim         |
-| **Terminal Emulator:**      | Kitty + Zellij | Kitty + Zellij |
-| **Browser:**                | Chrome         | Chrome         |
-| **Color Scheme**            | Catppuccin     | Catppuccin     |
-| **System resource monitor** | Btop           | Btop           |
-| **File Manager**            | Yazi           | Yazi           |
+|                             | Linux &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | MacOS &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |
+| --------------------------- | ----------------------------------------------- | ------------------------------------------------------ |
+| **Shell:**                  | zsh + Starship                                  | zsh + Starship                                         |
+| **WM:**                     | TODO                                            | Yabai                                                  |
+| **Launcher:**               | TODO                                            | skhd                                                   |
+| **Editor:**                 | NixVim                                          | NixVim                                                 |
+| **Terminal Emulator:**      | Kitty + Zellij                                  | Kitty + Zellij                                         |
+| **Browser:**                | Chrome                                          | Chrome                                                 |
+| **Color Scheme**            | Catppuccin                                      | Catppuccin                                             |
+| **System resource monitor** | Btop                                            | Btop                                                   |
+| **File Manager**            | Yazi                                            | Yazi                                                   |
 
 ---
 
@@ -89,6 +90,7 @@ If you have any questions about secrets using nix. Please see the following epic
 ## Usage
 
 > [!IMPORTANT]
+>
 > **Disclaimer:** _This is not a "community framework" or "NixOS distribution"._
 > Please do not use it like one. It is a relatively poor and somewhat frankenstein
 > implementation from many, many people (see [Acknowledgements](#acknowledgements)) who are far smarter
