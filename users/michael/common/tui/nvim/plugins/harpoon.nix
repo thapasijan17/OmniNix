@@ -4,6 +4,7 @@
       enable = true;
       enableTelescope = true;
       keymapsSilent = true;
+      saveOnToggle = true;
       keymaps = {
         #Keys added to whichkey too
         addFile = "<leader>ha";

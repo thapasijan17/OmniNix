@@ -1,8 +1,12 @@
-{ pkgs, inputs, ... }: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
 
-    #Base Configs
+    # Base Configs
     ./keymaps.nix
     ./sets.nix
     ./colorschemes.nix
@@ -23,6 +27,5 @@
     luaLoader.enable = true;
 
     package = inputs.neovim-nightly-overlay.packages.${pkgs.system}.default;
-
   };
 }

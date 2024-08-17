@@ -1,4 +1,4 @@
-{ specialArgs, ... }: {
+{
   imports = [
     ./completion
     ./git
@@ -6,7 +6,6 @@
     ./lsp
     ./statusline
     ./ui
-
 
     ./buffer.nix # buffer management keymaps and bufferline
     ./better-escape.nix # plugin to enable escaping insert mode with keys like jj and reducing the delay
@@ -33,6 +32,6 @@
     ./undotree.nix # tracks undos in a tree so you can you dont lose history!
     ./whichkey.nix # helps me remember hotkeys
     ./wilder.nix # plugin that enables autocompletion for cmdline and search
-
+    #
   ];
 }
