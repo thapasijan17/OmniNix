@@ -100,7 +100,7 @@
     specialArgs = {inherit inputs outputs myVars myLibs nixpkgs;};
   in {
     overlays = import ./overlays {inherit inputs outputs;};
-    #packages = forAllSystems (pkgs: import ./pkgs {inherit pkgs;});
+
     formatter = forAllSystems (pkgs: pkgs.alejandra);
 
     # MacBook Air M1 20202
