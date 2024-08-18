@@ -92,7 +92,7 @@
               "n"
               "v"
             ];
-            group = "markdown";
+            group = "+markdown";
           }
 
           {
@@ -140,7 +140,7 @@
               "n"
               "v"
             ];
-            group = "links";
+            group = "+links";
           }
 
           {
@@ -149,7 +149,7 @@
               "n"
               "v"
             ];
-            group = "fold";
+            group = "+fold";
           }
           {
             __unkeyed-1 = "<leader>mh";
@@ -157,7 +157,7 @@
               "n"
               "v"
             ];
-            group = "headings increase/decrease";
+            group = "+headings increase/decrease";
           }
         ];
         win = {
