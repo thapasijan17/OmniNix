@@ -4,6 +4,8 @@
     ./git
     ./languages
     ./lsp
+    ./markdown
+    ./snippets
     ./statusline
     ./ui
 
@@ -14,12 +16,10 @@
     ./hardtime.nix # plugin to enforce good vim movements
     ./harpoon.nix # plugin from primeagen for managing lists of files you need to work on
     ./illuminate.nix # highlights the same word currently under the cursor
-    ./markdown-preview.nix # markedown preview
     ./mini.nix # swiss army knife for neovim all written in lua
     ./neotest.nix # testing plugin
     ./nvim-colorizer.nix # color highlighting plugin
     ./nvim-surround.nix # helping surround text - similar to autopair but works around existing text
-    ./luasnip.nix # snippets in vim
     ./oil.nix # file management in a simple buffer!
     ./persistence.nix # session management
     ./project-nvim.nix # project management with integration to telescope
