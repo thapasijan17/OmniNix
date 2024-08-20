@@ -11,6 +11,8 @@
           };
         };
         cursorword = {};
+        surround = {};
+        ai = {};
       };
     };
   };

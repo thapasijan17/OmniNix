@@ -1,6 +1,4 @@
-{ config
-, ...
-}: {
+{config, ...}: {
   # https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/ya/yabai/package.nix
   services.yabai = {
     enable = true;
@@ -10,7 +8,6 @@
     # https://github.com/koekeishiya/yabai/wiki/Disabling-System-Integrity-Protection
     enableScriptingAddition = true;
     config = {
-
       # global settings
       mouse_follows_focus = false;
       focus_follows_mouse = "off";
@@ -35,15 +32,11 @@
     extraConfig = builtins.readFile ./yabairc;
   };
 
-
   # custom log path for debugging
-  launchd.user.agents.yabai.serviceConfig =
-    let
-      homeDir = config.users.users.michael.home;
-    in
-    {
-      StandardErrorPath = "${homeDir}/Library/Logs/yabai.stderr.log";
-      StandardOutPath = "${homeDir}/Library/Logs/yabai.stdout.log";
-    };
-
+  launchd.user.agents.yabai.serviceConfig = let
+    homeDir = config.users.users.michael.home;
+  in {
+    StandardErrorPath = "${homeDir}/Library/Logs/yabai.stderr.log";
+    StandardOutPath = "${homeDir}/Library/Logs/yabai.stdout.log";
+  };
 }

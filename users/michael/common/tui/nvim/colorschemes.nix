@@ -19,6 +19,7 @@
           notify = true;
           neotree = true;
           harpoon = true;
+          headlines = true;
           gitsigns = true;
           which_key = true;
           illuminate = {
@@ -35,16 +36,15 @@
               background = true;
             };
             underlines = {
-              errors = [ "underline" ];
-              hints = [ "underline" ];
-              information = [ "underline" ];
-              warnings = [ "underline" ];
+              errors = ["underline"];
+              hints = ["underline"];
+              information = ["underline"];
+              warnings = ["underline"];
             };
           };
+          nvim_surround = true;
         };
-
       };
-
     };
   };
 }

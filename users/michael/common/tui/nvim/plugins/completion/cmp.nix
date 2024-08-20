@@ -1,11 +1,11 @@
 {
   programs.nixvim = {
     plugins = {
-      cmp-nvim-lsp = { enable = true; }; # lsp
-      cmp-buffer = { enable = true; };
-      cmp-path = { enable = true; }; # file system paths
-      cmp_luasnip = { enable = true; }; # snippets
-      cmp-cmdline = { enable = false; }; # autocomplete for cmdline
+      cmp-nvim-lsp = {enable = true;}; # lsp
+      cmp-buffer = {enable = true;};
+      cmp-path = {enable = true;}; # file system paths
+      cmp_luasnip = {enable = true;}; # snippets
+      cmp-cmdline = {enable = false;}; # autocomplete for cmdline
       cmp = {
         enable = true;
         autoEnableSources = false;
@@ -28,7 +28,7 @@
 
               ['<C-Space>'] = cmp.mapping.complete(),
 
-              ['<CR>'] = cmp.mapping.confirm({ select = true }),
+              ['<C-y>'] = cmp.mapping.confirm({ select = true }),
 
               ['<S-CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
               })
@@ -64,7 +64,7 @@
             };
           };
           formatting = {
-            fields = [ "kind" "abbr" "menu" ];
+            fields = ["kind" "abbr" "menu"];
             expandable_indicator = true;
           };
         };
@@ -106,26 +106,26 @@
         cmp.setup.cmdline({'/', "?" }, {
             sources = {
             { name = 'buffer' }
-            }
-            })
+          }
+        })
 
       -- Set configuration for specific filetype.
         cmp.setup.filetype('gitcommit', {
-            sources = cmp.config.sources({
-                { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
-                }, {
-                { name = 'buffer' },
-                })
-            })
+          sources = cmp.config.sources({
+            { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
+          }, {
+            { name = 'buffer' },
+          })
+        })
 
       -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
         cmp.setup.cmdline(':', {
-            sources = cmp.config.sources({
-                { name = 'path' }
-                }, {
-                { name = 'cmdline' }
-                }),
-            })  '';
-
+          sources = cmp.config.sources({
+            { name = 'path'}
+          },{
+            { name = 'cmdline' }
+          })
+        })
+    '';
   };
 }

@@ -1,10 +1,10 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     typescript
+    marksman
   ];
 
   programs.nixvim = {
-
     plugins = {
       lsp-format = {
         enable = false; # Enable it if you want lsp-format integration for none-ls
@@ -13,7 +13,7 @@
         enable = true;
         capabilities = "offsetEncoding =  'utf-16'";
         servers = {
-          clangd = { enable = true; };
+          clangd = {enable = true;};
           lua-ls = {
             enable = true;
             extraOptions = {
@@ -25,15 +25,18 @@
                   telemetry = {
                     enabled = false;
                   };
-                  hint = { enable = true; };
+                  hint = {enable = true;};
                 };
               };
             };
           };
-          nil-ls = { enable = true; };
+          marksman = {
+            enable = true;
+          };
+          nil-ls = {enable = true;};
           tsserver = {
             enable = false; #using typescript-tools instead right now
-            filetypes = [ "javascript" "javascriptreact" "typescript" "typescriptreact" ];
+            filetypes = ["javascript" "javascriptreact" "typescript" "typescriptreact"];
             extraOptions = {
               settings = {
                 javascript = {
@@ -61,10 +64,10 @@
               };
             };
           };
-          eslint = { enable = true; };
-          emmet-ls = { enable = true; };
-          pyright = { enable = true; };
-          ruff-lsp = { enable = true; };
+          eslint = {enable = true;};
+          emmet-ls = {enable = true;};
+          pyright = {enable = true;};
+          ruff-lsp = {enable = true;};
           rust-analyzer = {
             enable = true;
             installCargo = true;
@@ -171,5 +174,4 @@
       }
     '';
   };
-
 }
