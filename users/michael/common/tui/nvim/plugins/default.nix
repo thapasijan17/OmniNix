@@ -12,7 +12,6 @@
     ./buffer.nix # buffer management keymaps and bufferline
     ./better-escape.nix # plugin to enable escaping insert mode with keys like jj and reducing the delay
     ./dap.nix # debugger
-    ./eyeliner.nix # faster highlighting with f and F
     ./hardtime.nix # plugin to enforce good vim movements
     ./harpoon.nix # plugin from primeagen for managing lists of files you need to work on
     ./illuminate.nix # highlights the same word currently under the cursor
@@ -25,7 +24,6 @@
     ./project-nvim.nix # project management with integration to telescope
     ./sidebar.nix # amazingly simple sidebar for current status
     ./spectre.nix # Find and replace from neovim
-    ./stay-centered.nix # center cursor
     ./telescope.nix # plugin for everything search in neovim
     ./tmux-navigator.nix # TMUX navigation in neovim
     ./todo-comments.nix # sweet hiighlighting for todos etc
