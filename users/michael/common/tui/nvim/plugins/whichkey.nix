@@ -9,51 +9,6 @@
           separator = "➜"; # ➜
         };
         spec = [
-          # Harpoon Configs
-          {
-            __unkeyed-1 = "<leader>h";
-            mode = [
-              "n"
-            ];
-            group = "+harpoon";
-            icon = "󱡁";
-          }
-          {
-            __unkeyed-1 = "<leader>ha";
-            mode = [
-              "n"
-            ];
-            group = "Add file to Harpoon";
-          }
-          {
-            __unkeyed-1 = "<leader>h1";
-            mode = [
-              "n"
-            ];
-            group = "Harpoon File 1";
-          }
-          {
-            __unkeyed-1 = "<leader>h2";
-            mode = [
-              "n"
-            ];
-            group = "Harpoon File 2";
-          }
-          {
-            __unkeyed-1 = "<leader>h3";
-            mode = [
-              "n"
-            ];
-            group = "Harpoon File 3";
-          }
-          {
-            __unkeyed-1 = "<leader>h4";
-            mode = [
-              "n"
-            ];
-            group = "Harpoon File 4";
-          }
-
           # Top Level Configs
           {
             __unkeyed-1 = "<leader>c";
@@ -132,6 +87,51 @@
             group = "+windows";
           }
 
+          # Harpoon Configs
+          {
+            __unkeyed-1 = "<leader>h";
+            mode = [
+              "n"
+            ];
+            group = "+harpoon";
+            icon = "󱡁";
+          }
+          {
+            __unkeyed-1 = "<leader>ha";
+            mode = [
+              "n"
+            ];
+            group = "Add file to Harpoon";
+          }
+          {
+            __unkeyed-1 = "<leader>h1";
+            mode = [
+              "n"
+            ];
+            group = "Harpoon File 1";
+          }
+          {
+            __unkeyed-1 = "<leader>h2";
+            mode = [
+              "n"
+            ];
+            group = "Harpoon File 2";
+          }
+          {
+            __unkeyed-1 = "<leader>h3";
+            mode = [
+              "n"
+            ];
+            group = "Harpoon File 3";
+          }
+          {
+            __unkeyed-1 = "<leader>h4";
+            mode = [
+              "n"
+            ];
+            group = "Harpoon File 4";
+          }
+
           # Markdown Configs
 
           {
@@ -150,14 +150,6 @@
               "v"
             ];
             group = "+fold";
-          }
-          {
-            __unkeyed-1 = "<leader>mh";
-            mode = [
-              "n"
-              "v"
-            ];
-            group = "+headings increase/decrease";
           }
         ];
         win = {
