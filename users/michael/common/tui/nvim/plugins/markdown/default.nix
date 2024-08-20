@@ -9,6 +9,9 @@
       bullets-vim
       outline-nvim
     ];
+    extraConfigLua = ''
+      require("outline").setup { }
+    '';
     keymaps = [
       {
         mode = ["n"];
