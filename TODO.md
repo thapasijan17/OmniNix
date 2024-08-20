@@ -19,6 +19,7 @@
 
 - [ ] Tab between variables in snippets not working
 - [ ] Extract NixVim configs out into a standalon repo
+- [ ] LSP keymaps are screwed up
 - [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)
 
 ## Future Deployments
