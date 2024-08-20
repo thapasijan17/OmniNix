@@ -17,9 +17,9 @@
 
 ## Nvim todos
 
-- [ ] Tab between variables in snippets not working
 - [ ] Extract NixVim configs out into a standalon repo
 - [ ] LSP keymaps are screwed up
+- [ ] I think i should move all keymaps to one file
 - [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)
 
 ## Future Deployments
@@ -30,6 +30,7 @@
 
 ## Done
 
+- [x] Tab between variables in snippets not working
 - [x] fix markdown-preview
 - [x] fix neovim markdown formatting - important notes remove new line
 - [x] Learn about using nix in development environments
