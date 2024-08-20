@@ -24,6 +24,8 @@
     ./persistence.nix # session management
     ./project-nvim.nix # project management with integration to telescope
     ./sidebar.nix # amazingly simple sidebar for current status
+    ./spectre.nix # Find and replace from neovim
+    ./stay-centered.nix # center cursor
     ./telescope.nix # plugin for everything search in neovim
     ./tmux-navigator.nix # TMUX navigation in neovim
     ./todo-comments.nix # sweet hiighlighting for todos etc

@@ -17,9 +17,7 @@
 
 ## Nvim todos
 
-- [ ] fix markdown-preview
 - [ ] Tab between variables in snippets not working
-- [ ] fix neovim markdown formatting - important notes remove new line
 - [ ] Extract NixVim configs out into a standalon repo
 - [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)
 
@@ -31,6 +29,8 @@
 
 ## Done
 
+- [x] fix markdown-preview
+- [x] fix neovim markdown formatting - important notes remove new line
 - [x] Learn about using nix in development environments
 - [x] auto set my dock <https://github.com/dustinlyons/nixos-config/blob/main/flake.nix>
 - [x] Research and Configure ZelliJ or Tmux

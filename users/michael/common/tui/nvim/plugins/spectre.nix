@@ -1,6 +1,6 @@
 _: {
   programs.nixvim = {
-    Plugins.spectre = {
+    plugins.spectre = {
       enable = true;
       settings = {
         replace = "sed";
