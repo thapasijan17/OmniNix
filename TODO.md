@@ -17,7 +17,7 @@
 
 ## Nvim todos
 
-- [ ] Extract NixVim configs out into a standalon repo
+- [ ] Extract NixVim configs out into a standalone repo
 - [ ] Markdown table of contents
 - [ ] I think i should move all keymaps to one file
 - [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)

@@ -14,9 +14,15 @@ Please dont take any of this repo as my own work. I am merely standing on the sh
 ## Table of Contents
 
 - [Feature Highlights](#feature-highlights)
-- [Roadmap of TODOs](TODO.md)
 - [Structure](#structure-quick-reference)
+- [Components](#components)
+- [Secrets Management](#secrets-management)
+- [Usage](#usage)
+- [Ongoing](#ongoing)
+- [Questions](#questions)
+- [Guidance and Resources](guidance-and-resources)
 - [Acknowledgements](#acknowledgements)
+- [Roadmap of TODOs](TODO.md)
 
 ---
 
@@ -134,6 +140,7 @@ Thank you to the amazing engineers work that I have built my dotfiles on top of,
 - [Misterio77] (<https://github.com/Misterio77/nix-config?tab=readme-ov-file>)
 - [EmergentMind] (<https://github.com/EmergentMind/nix-config>)
 - [ryan4yin] (<https://github.com/ryan4yin/nix-config/tree/main>)
+- [redyf] (<https://github.com/redyf/Neve>)
 - [pietersp] (<https://github.com/pietersp/dotfiles>)
 - [Zumorica] (<https://github.com/Zumorica/GradientOS/>)
 - [ritiek] (<https://github.com/ritiek/dotfiles>)
@@ -141,4 +148,3 @@ Thank you to the amazing engineers work that I have built my dotfiles on top of,
 - [andreykaipov] (<https://github.com/andreykaipov/nix>)
 - [martaver] (<https://github.com/martaver/dotfiles>)
 - [mtyurt] (<https://github.com/mtyurt/dotfiles>)
-- [redyf] (<https://github.com/redyf/Neve>)
