@@ -1,6 +1,5 @@
 {
   programs.nixvim = {
-
     plugins.lspsaga = {
       enable = true;
       beacon = {
@@ -29,7 +28,7 @@
         numShortcut = true;
         keys = {
           exec = "<CR>";
-          quit = [ "<Esc>" "q" ];
+          quit = ["<Esc>" "q"];
         };
       };
       lightbulb = {
@@ -44,7 +43,7 @@
         autoSave = false;
         keys = {
           exec = "<CR>";
-          quit = [ "<C-k>" "<Esc>" ];
+          quit = ["<C-k>" "<Esc>"];
           select = "x";
         };
       };
@@ -68,16 +67,7 @@
     keymaps = [
       {
         mode = "n";
-        key = "gd";
-        action = "<cmd>Lspsaga finder def<CR>";
-        options = {
-          desc = "Goto Definition";
-          silent = true;
-        };
-      }
-      {
-        mode = "n";
-        key = "gr";
+        key = "<leader>cgr";
         action = "<cmd>Lspsaga finder ref<CR>";
         options = {
           desc = "Goto References";
@@ -85,19 +75,19 @@
         };
       }
 
-      # {
-      #   mode = "n";
-      #   key = "gD";
-      #   action = "<cmd>Lspsaga show_line_diagnostics<CR>";
-      #   options = {
-      #     desc = "Goto Declaration";
-      #     silent = true;
-      #   };
-      # }
+      {
+        mode = "n";
+        key = "<leader>cgd";
+        action = "<cmd>Lspsaga finder def<CR>";
+        options = {
+          desc = "Goto Definition";
+          silent = true;
+        };
+      }
 
       {
         mode = "n";
-        key = "gI";
+        key = "<leader>cgi";
         action = "<cmd>Lspsaga finder imp<CR>";
         options = {
           desc = "Goto Implementation";
@@ -107,7 +97,7 @@
 
       {
         mode = "n";
-        key = "gT";
+        key = "<leader>cD";
         action = "<cmd>Lspsaga peek_type_definition<CR>";
         options = {
           desc = "Type Definition";
@@ -117,7 +107,7 @@
 
       {
         mode = "n";
-        key = "K";
+        key = "<leader>ch";
         action = "<cmd>Lspsaga hover_doc<CR>";
         options = {
           desc = "Hover";
@@ -127,7 +117,7 @@
 
       {
         mode = "n";
-        key = "<leader>cw";
+        key = "<leader>cO";
         action = "<cmd>Lspsaga outline<CR>";
         options = {
           desc = "Outline";
@@ -157,7 +147,7 @@
 
       {
         mode = "n";
-        key = "<leader>cd";
+        key = "<leader>cl";
         action = "<cmd>Lspsaga show_line_diagnostics<CR>";
         options = {
           desc = "Line Diagnostics";
@@ -167,7 +157,7 @@
 
       {
         mode = "n";
-        key = "[d";
+        key = "<leader>cd]";
         action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
         options = {
           desc = "Next Diagnostic";
@@ -177,7 +167,7 @@
 
       {
         mode = "n";
-        key = "]d";
+        key = "<leader>cd[";
         action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
         options = {
           desc = "Previous Diagnostic";

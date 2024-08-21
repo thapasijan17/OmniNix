@@ -1,7 +1,4 @@
-{ pkgs
-, ...
-}: {
-
+{pkgs, ...}: {
   # Install packages from nix's official package repository.
   #
   # The packages installed here are available to all users, and are reproducible across machines, and are rollbackable.
@@ -11,7 +8,6 @@
   #
   # UI apps on MacOS will get installed to /Applications/Nix Apps
   environment.systemPackages = with pkgs; [
-
     gnugrep # replacee macos's grep
     gnutar # replacee macos's tar
 
@@ -24,7 +20,6 @@
   environment.variables = {
     # Fix https://github.com/LnL7/nix-darwin/wiki/Terminfo-issues
     # TERMINFO_DIRS = map (path: path + "/share/terminfo") config.environment.profiles ++ [ "/usr/share/terminfo" ];
-
     EDITOR = "nvim";
   };
 
@@ -35,7 +30,7 @@
     pkgs.bash
     pkgs.zsh
   ];
-  environment.pathsToLink = [ "/share/zsh" ];
+  environment.pathsToLink = ["/share/zsh"];
 
   # https://github.com/LnL7/nix-darwin/blob/master/modules/homebrew.nix
   homebrew = {
@@ -43,8 +38,13 @@
 
     onActivation = {
       autoUpdate = true;
-      # 'zap': uninstalls all formulae(and related files) not listed in the generated Brewfile
+      upgrade = true;
       cleanup = "uninstall";
+    };
+
+    global = {
+      brewfile = true;
+      autoUpdate = true;
     };
 
     # Applications to install from Mac App Store using mas.
@@ -65,7 +65,6 @@
 
     # `brew install --cask`
     casks = [
-
       # Utilities
       "raycast" # Better Spotlight
       "mullvadvpn" # VPN software
@@ -136,7 +135,6 @@
       # "brooklyn" #unclear"
       # "suspicious-package" #unclear"
 
-
       ## QuickLook plugins
       # "qlcolorcode" #Preview source code files with syntax highlighting https://github.com/anthonygelibert/QLColorCode"
       # "qlimagesize" #Display image size and resolution https://github.com/Nyx0uf/qlImageSize"
@@ -147,7 +145,6 @@
       # "quicklook-json" #Preview JSON files http://www.sagtau.com/quicklookjson.html"
       # "quicklook-csv" #A QuickLook plugin for CSV files https://github.com/p2/quicklook-csv"
       # "qlmobi" #Quick Look plugin for Kindle ebook formats https://github.com/bfabiszewski/QLMobi"
-
     ];
   };
 }

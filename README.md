@@ -1,4 +1,4 @@
-<h2 align="center">:snowflake: McGilly17's Nix Config :snowflake:</h2>
+<h1 align="center">:snowflake: McGilly17's Nix Config :snowflake:</h1>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="400" />

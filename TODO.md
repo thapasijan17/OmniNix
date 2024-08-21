@@ -1,21 +1,39 @@
 # TODOs
 
-##  Ongoing
+## Priority Todos
 
-- [ ] manage autocompletions for yabai and other tools - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/Amar1729/yabai-zsh-completions/blob/main/src/_yabai>
-- [ ] Configure first nixOS machine
+- [ ] git aliases
 - [ ] Configure Just
-- [ ] Extract NixVim configs out into a standalon repo
+- [ ] fix autocomplete on zsh so that complete isnt done with only right arrow
+
+## General Todos
+
+- [ ] Advanced Configuring ZSH - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/MaJinjie/dotfiles/blob/b68ab9325ce790d41e0222eb4232ed4b8fda7c8c/.config/zsh/zsh.d/00-options.zsh>
+- [ ] manage autocompletions for yabai and other tools - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/Amar1729/yabai-zsh-completions/blob/main/src/_yabai>
 - [ ] Explore bar options for mac (spacebar from Calum MacRae)
-- [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)
-- [ ] fix neovim markdown formatting
-- [ ] Configure remote deployment and server specific deployments
 - [ ] Update dock config to allow for spacers
-- [ ] Update secrets management to do host level decryption (for linux machines)
 - [ ] update/config starship prompt for development envs and cloud providers
 - [ ] checkout cli/tui tools lazydocker, navi
-- [ ] fix autocomplete on zsh so that complete isnt done with only right arrow
-- [ ] Advanced Configuring ZSH - <https://github.com/mattmc3/zdotdir/tree/c53974484b863eb632278921088563134adbfc60> <https://github.com/MaJinjie/dotfiles/blob/b68ab9325ce790d41e0222eb4232ed4b8fda7c8c/.config/zsh/zsh.d/00-options.zsh>
+
+## Nvim todos
+
+- [ ] Extract NixVim configs out into a standalon repo
+- [ ] Markdown table of contents
+- [ ] I think i should move all keymaps to one file
+- [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)
+
+## Future Deployments
+
+- [ ] Configure first nixOS machine
+- [ ] Configure remote deployment and server specific deployments
+- [ ] Update secrets management to do host level decryption (for linux machines)
+
+## Done
+
+- [x] LSP keymaps are screwed up
+- [x] Tab between variables in snippets not working
+- [x] fix markdown-preview
+- [x] fix neovim markdown formatting - important notes remove new line
 - [x] Learn about using nix in development environments
 - [x] auto set my dock <https://github.com/dustinlyons/nixos-config/blob/main/flake.nix>
 - [x] Research and Configure ZelliJ or Tmux

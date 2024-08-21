@@ -1,7 +1,6 @@
 # Thanks for the keybinds primeagen and folke!
 {
   programs.nixvim = {
-
     globals = {
       mapleader = " ";
       maplocalleader = " ";
@@ -10,7 +9,7 @@
     keymaps = [
       # Disable arrow keys
       {
-        mode = [ "n" "i" ];
+        mode = ["n" "i"];
         key = "<Up>";
         action = "<Nop>";
         options = {
@@ -20,7 +19,7 @@
         };
       }
       {
-        mode = [ "n" "i" ];
+        mode = ["n" "i"];
         key = "<Down>";
         action = "<Nop>";
         options = {
@@ -30,7 +29,7 @@
         };
       }
       {
-        mode = [ "n" "i" ];
+        mode = ["n" "i"];
         key = "<Right>";
         action = "<Nop>";
         options = {
@@ -40,7 +39,7 @@
         };
       }
       {
-        mode = [ "n" "i" ];
+        mode = ["n" "i"];
         key = "<Left>";
         action = "<Nop>";
         options = {
@@ -48,67 +47,6 @@
           noremap = true;
           desc = "Disable Left arrow key";
         };
-      }
-
-      # General maps
-      {
-        mode = "n";
-        key = "<leader>f";
-        action = "+find/file";
-      }
-
-      {
-        mode = "n";
-        key = "<leader>s";
-        action = "+search";
-      }
-
-      {
-        mode = "n";
-        key = "<leader>q";
-        action = "+quit/session";
-      }
-
-      {
-        mode = [ "n" "v" ];
-        key = "<leader>g";
-        action = "+git";
-      }
-
-      {
-        mode = "n";
-        key = "<leader>u";
-        action = "+ui";
-      }
-
-      {
-        mode = "n";
-        key = "<leader>w";
-        action = "+windows";
-      }
-
-      {
-        mode = "n";
-        key = "<leader><Tab>";
-        action = "+tab";
-      }
-
-      {
-        mode = [ "n" "v" ];
-        key = "<leader>d";
-        action = "+debug";
-      }
-
-      {
-        mode = [ "n" "v" ];
-        key = "<leader>c";
-        action = "+code";
-      }
-
-      {
-        mode = [ "n" "v" ];
-        key = "<leader>t";
-        action = "+test";
       }
 
       # Tabs
@@ -388,7 +326,7 @@
 
       # Copy stuff to system clipboard with <leader> + y or just y to have it just in vim
       {
-        mode = [ "n" "v" ];
+        mode = ["n" "v"];
         key = "<leader>y";
         action = "\"+y";
         options = {
@@ -397,7 +335,7 @@
       }
 
       {
-        mode = [ "n" "v" ];
+        mode = ["n" "v"];
         key = "<leader>Y";
         action = "\"+Y";
         options = {
@@ -407,7 +345,7 @@
 
       # Delete to void register
       {
-        mode = [ "n" "v" ];
+        mode = ["n" "v"];
         key = "<leader>D";
         action = "\"_d";
         options = {
@@ -415,7 +353,7 @@
         };
       }
 
-      # <C-c> instead of pressing esc just because
+      # instead of pressing esc just because
       {
         mode = "i";
         key = "jk";
@@ -444,6 +382,5 @@
         end, { desc = 'Toggle Inlay Hints' })
       end
     '';
-
   };
 }

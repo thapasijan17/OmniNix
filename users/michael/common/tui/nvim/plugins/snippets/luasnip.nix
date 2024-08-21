@@ -1,5 +1,4 @@
-{ pkgs, ... }: {
-
+{pkgs, ...}: {
   programs.nixvim = {
     plugins.luasnip = {
       enable = true;
@@ -11,6 +10,10 @@
         {
           lazyLoad = true;
           paths = "${pkgs.vimPlugins.friendly-snippets}";
+        }
+        {
+          lazyLoad = true;
+          paths = ./snippet-library;
         }
       ];
     };

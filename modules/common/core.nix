@@ -1,40 +1,34 @@
-{ pkgs
-, specialArgs
-, ...
-}: {
-
+{pkgs, ...}: {
   # No matter what environment we are in we want these tools for root, and the user(s)
   environment = {
-    systemPackages = with pkgs;
-      [
-        git # used by nix flakes
+    systemPackages = with pkgs; [
+      git # used by nix flakes
 
-        # archives
-        zip
-        p7zip
-        unrar # extract RAR archives
-        xz # extract XZ archives
+      # archives
+      zip
+      p7zip
+      unrar # extract RAR archives
+      xz # extract XZ archives
 
+      # Text Processing
+      # Docs: https://github.com/learnbyexample/Command-line-text-processing
+      gnugrep # GNU grep, provides `grep`/`egrep`/`fgrep`
+      gnused # GNU sed, very powerful(mainly for replacing text in files)
+      wget
+      curl # Will also install with brew on MacOS
+      coreutils
+      nix-prefetch
 
-        # Text Processing
-        # Docs: https://github.com/learnbyexample/Command-line-text-processing
-        gnugrep # GNU grep, provides `grep`/`egrep`/`fgrep`
-        gnused # GNU sed, very powerful(mainly for replacing text in files)
-        wget
-        curl # Will also install with brew on MacOS
-        coreutils
-
-        sops
-        ssh-to-age
-        age
-
-      ];
+      sops
+      ssh-to-age
+      age
+    ];
   };
 
   nix = {
     settings = {
       # enable flakes globally
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = ["nix-command" "flakes"];
 
       # See https://jackson.dev/post/nix-reasonable-defaults/
       connect-timeout = 5;

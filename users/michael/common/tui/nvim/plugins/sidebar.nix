@@ -1,6 +1,5 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   programs.nixvim = {
-
     extraPlugins = with pkgs.vimUtils; [
       (buildVimPlugin {
         pname = "sidebar.nvim";
@@ -46,7 +45,7 @@
     keymaps = [
       {
         mode = "n";
-        key = "<leader>e";
+        key = "<leader>ue";
         action = ":SidebarNvimToggle<CR>";
         options = {
           desc = "Toggle Explorer";

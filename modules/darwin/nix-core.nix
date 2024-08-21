@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  outputs,
   nixpkgs,
   ...
 }: {
@@ -15,6 +16,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = builtins.attrValues outputs.overlays;
 
   # Auto upgrade the nix-daemon service.
   services.nix-daemon.enable = true;
