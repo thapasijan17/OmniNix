@@ -8,6 +8,7 @@
           group = "+";
           separator = "➜"; # ➜
         };
+        sort = ["alphanum"];
         spec = [
           # Top Level Configs
           {
@@ -133,7 +134,6 @@
           }
 
           # Markdown Configs
-
           {
             __unkeyed-1 = "<leader>ml";
             mode = [
@@ -150,6 +150,22 @@
               "v"
             ];
             group = "+fold";
+          }
+
+          # Code Configs
+          {
+            __unkeyed-1 = "<leader>cg";
+            mode = [
+              "n"
+            ];
+            group = "GoTo";
+          }
+          {
+            __unkeyed-1 = "<leader>cd";
+            mode = [
+              "n"
+            ];
+            group = "Diagnostics";
           }
         ];
         win = {
