@@ -1,8 +1,15 @@
-{ inputs, pkgs, specialArgs, ... }: {
-  imports = specialArgs.myLibs.scanPaths ./. ++ [
-    inputs.catppuccin.homeManagerModules.catppuccin
-    inputs._1password-shell-plugins.hmModules.default
-  ];
+{
+  inputs,
+  pkgs,
+  specialArgs,
+  ...
+}: {
+  imports =
+    specialArgs.myLibs.scanPaths ./.
+    ++ [
+      inputs.catppuccin.homeManagerModules.catppuccin
+      inputs._1password-shell-plugins.hmModules.default
+    ];
 
   # Using catppuccin nix - global application of the catppuccin theme is enabled
   # For every supported application:
@@ -13,7 +20,6 @@
   };
 
   home.packages = with pkgs; [
-
     # Just install these with no config
     # Search here for config options for each. https://mynixos.com/home-manager/options/programs
 
@@ -92,11 +98,24 @@
     neofetch
     devenv
 
+    # Neovim LSP and other pkgs
+    prettierd
+    nodePackages.prettier
+    google-java-format
+    black
+    rustfmt
+    selene
+    eslint_d
+    nodePackages.jsonlint
+    checkstyle
+    markdownlint-cli2
+    typescript
+    marksman
+
     # Git speific addons
     bfg-repo-cleaner # Removes large or troublesome blobs in a git repository like git-filter-branch does, but faster
     git-crypt # git-crypt enables transparent encryption and decryption of files in a git repository https://www.agwa.name/projects/git-crypt/
     github-commenter # Command line utility for creating GitHub comments on Commits, Pull Request Reviews or Issues
     github-release # Commandline app to create and edit releases on Github and upload artifacts https://github.com/aktau/github-release
-
   ];
 }

@@ -16,19 +16,19 @@
     # example = prev.example.overrideAttrs (oldAttrs: let ... in {
     # ...
     # });
-    vimPlugins =
-      prev.vimPlugins
-      // {
-        eyeliner-nvim = prev.vimPlugins.eyeliner-nvim.overrideAttrs (oldAttrs: {
-          version = "2024-08-09";
-          src = final.fetchFromGitHub {
-            owner = "jinh0";
-            repo = "eyeliner.nvim";
-            rev = "7385c1a29091b98ddde186ed2d460a1103643148";
-            hash = "sha256-PyCcoSC/LeJ/Iuzlm5gd/0lWx8sBS50Vhe7wudgZzqM=";
-          };
-        });
-      };
+    # vimPlugins =
+    #   prev.vimPlugins
+    #   // {
+    #     eyeliner-nvim = prev.vimPlugins.eyeliner-nvim.overrideAttrs (oldAttrs: {
+    #       version = "2024-08-09";
+    #       src = final.fetchFromGitHub {
+    #         owner = "jinh0";
+    #         repo = "eyeliner.nvim";
+    #         rev = "7385c1a29091b98ddde186ed2d460a1103643148";
+    #         hash = "sha256-PyCcoSC/LeJ/Iuzlm5gd/0lWx8sBS50Vhe7wudgZzqM=";
+    #       };
+    #     });
+    #   };
 
     # NOTE: Cant get this to work as the cargoHash is still set to the 0.40.1 versions
     # and there isnt a new one yet. If anyone understands how to overcome this, please

@@ -42,15 +42,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # NeoVim with Nix power!
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # use nightly neovim
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-
     #################### Non Flakes ####################
     homebrew-bundle = {
       url = "github:homebrew/homebrew-bundle";
