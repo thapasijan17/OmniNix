@@ -17,9 +17,7 @@
 
 ## Nvim todos
 
-- [ ] Extract NixVim configs out into a standalone repo
 - [ ] Markdown table of contents
-- [ ] I think i should move all keymaps to one file
 - [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)
 
 ## Future Deployments
@@ -30,6 +28,8 @@
 
 ## Done
 
+- [x] I think i should move all keymaps to one file
+- [x] Extract NixVim configs out into a standalone repo
 - [x] LSP keymaps are screwed up
 - [x] Tab between variables in snippets not working
 - [x] fix markdown-preview

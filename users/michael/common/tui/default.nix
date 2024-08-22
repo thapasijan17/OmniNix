@@ -117,5 +117,6 @@
     git-crypt # git-crypt enables transparent encryption and decryption of files in a git repository https://www.agwa.name/projects/git-crypt/
     github-commenter # Command line utility for creating GitHub comments on Commits, Pull Request Reviews or Issues
     github-release # Commandline app to create and edit releases on Github and upload artifacts https://github.com/aktau/github-release
+    libgit2 # Linkable library implementation of Git that you can use in your application (used for nvim git implementation)
   ];
 }
