@@ -11,6 +11,9 @@
         viAlias = true;
         vimAlias = true;
 
+        # Example of how to turn off manual plugins in Mosaic
+        # plugs.sidebar.enable = false;
+
         # Fugit2 needs to be installed here, this is due to its dependency on
         # libgit2 and how it needs to be linked (with the path)
         extraPlugins = with pkgs.vimUtils; [

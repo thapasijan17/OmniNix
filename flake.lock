@@ -509,11 +509,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1724456884,
-        "narHash": "sha256-1NpMKF50HoizgPD9SxNCCha8YrtavTUvMolDNfSs1Ug=",
+        "lastModified": 1724478696,
+        "narHash": "sha256-1+WQXRP2xInEJrNIgVYQDlOH2S20ECSw7MAr0n348Yw=",
         "ref": "refs/heads/main",
-        "rev": "2836eb26e22d3b98f0ede6e7c7b7771e3249baab",
-        "revCount": 14,
+        "rev": "21d16d54df0a9947e4dc98744087de4dd877be40",
+        "revCount": 19,
         "type": "git",
         "url": "ssh://git@github.com/mcgilly17/Mosaic"
       },
@@ -792,11 +792,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1724443641,
-        "narHash": "sha256-8fU9ps6r1/cMeA7WQ9UHo8f7j3O6J4QiXk8v4wVUC3A=",
+        "lastModified": 1724455584,
+        "narHash": "sha256-9I5x60BDMcD4NKjw6skIVUzocVDuZlQK52JRsgD54ns=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "052ee66dbb975960cc151db0b5db6a893503582a",
+        "rev": "4c8d3559ac4548723eeba9861a94ab63219b0d43",
         "type": "github"
       },
       "original": {
