@@ -91,6 +91,8 @@
       ## Messaging and Communication
       "whatsapp" #Desktop Whatsapp client"
 
+      "qlcolorcode" #Preview source code files with syntax highlighting https://github.com/anthonygelibert/QLColorCode"
+
       # "launchrocket" #LaunchRocket. A Mac PreferencePane for managing services with launchd https://github.com/jimbojsb/launchrocket"
       # "suspicious-package" #An Application for Inspecting macOS Installer Packages https://www.mothersruin.com/software/SuspiciousPackage/"
       # "gpg-suite" #Everything you need to get started with secure communication and encrypting files in one simple package"
@@ -136,7 +138,6 @@
       # "suspicious-package" #unclear"
 
       ## QuickLook plugins
-      # "qlcolorcode" #Preview source code files with syntax highlighting https://github.com/anthonygelibert/QLColorCode"
       # "qlimagesize" #Display image size and resolution https://github.com/Nyx0uf/qlImageSize"
       # "qlvideo" #Preview most types of video files, as well as their thumbnails, cover art and metadata https://github.com/Marginal/QLVideo"
       # "provisionql" #Preview iOS / macOS app and provision information https://github.com/ealeksandrov/ProvisionQL"

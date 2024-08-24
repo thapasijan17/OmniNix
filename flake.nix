@@ -64,6 +64,9 @@
       url = "git+ssh://git@github.com/mcgilly17/nix-secrets.git?ref=main&shallow=1";
       flake = false;
     };
+    mosaic = {
+      url = "git+ssh://git@github.com/mcgilly17/Mosaic";
+    };
   };
 
   outputs = {
@@ -71,6 +74,7 @@
     nixpkgs,
     darwin,
     home-manager,
+    mosaic,
     ...
   } @ inputs: let
     inherit (nixpkgs) lib;
