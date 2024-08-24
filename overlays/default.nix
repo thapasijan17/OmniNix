@@ -4,16 +4,16 @@
 {inputs, ...}: {
   # This one brings our custom packages from the 'pkgs' directory
   additions = final: _prev: {
-    # Add any additional packages in here
-    #
-    #
+    # Can't get the below to work...will just go with the package route
+    # mosaic = inputs.mosaic.overlays.default;
+    mosaic = inputs.mosaic.packages.${final.pkgs.system}.default;
   };
 
   # This one contains whatever you want to overlay
   # You can change versions, add patches, set compilation flags, anything really.
   # https://nixos.wiki/wiki/Overlays
   modifications = final: prev: {
-    # leaving as an example - moved to github.com/mcgilly17/mosaic
+    # leaving as an example - moved to github.com/mcgilly17/Mosaic
     # vimPlugins =
     #   prev.vimPlugins
     #   // {
