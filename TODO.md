@@ -15,6 +15,7 @@
 - [ ] update/config starship prompt for development envs and cloud providers
 - [ ] checkout cli/tui tools lazydocker, navi
 - [ ] setup nix shells
+- [ ] Karabiner configs: <https://github.com/mattsawyer77/nix-configuration/blob/7b099354e249fa73b3c31418d604953a09f94199/home/karabiner/default.nix#L474>
 
 ## Nvim todos
 
