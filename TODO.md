@@ -2,7 +2,6 @@
 
 ## Priority Todos
 
-- [ ] git aliases
 - [ ] Configure Just
 - [ ] fix autocomplete on zsh so that complete isnt done with only right arrow
 
@@ -33,6 +32,7 @@
 
 ## Done
 
+- [x] git aliases
 - [x] I think i should move all keymaps to one file
 - [x] Extract NixVim configs out into a standalone repo
 - [x] LSP keymaps are screwed up
