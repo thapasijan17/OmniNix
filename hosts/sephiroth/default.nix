@@ -4,18 +4,17 @@
 #  MacOS
 #
 ###############################################################
-{ inputs
-, pkgs
-, specialArgs
-, myLibs
-, config
-, ...
-}:
-let
+{
+  inputs,
+  pkgs,
+  specialArgs,
+  myLibs,
+  config,
+  ...
+}: let
   hostname = "sephiroth";
   inherit (specialArgs.myVars.users) michael;
-in
-{
+in {
   imports =
     [
       inputs.home-manager.darwinModules.home-manager
@@ -41,6 +40,7 @@ in
   #################### Home Manager Configs ####################
 
   home-manager = {
+    backupFileExtension = "backup";
     useGlobalPkgs = true;
     useUserPackages = true;
     extraSpecialArgs = specialArgs;
