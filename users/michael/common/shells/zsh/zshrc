@@ -1,5 +1,6 @@
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+bindkey '^y' autosuggest-accept
 
 # bindkey '^i' fzf-tab-complete # eh maybe the above it's not that great, ^e is plenty convenient
 # bindkey '\t' fzf-tab-complete # this one overrides zsh-autocomplete's tab
