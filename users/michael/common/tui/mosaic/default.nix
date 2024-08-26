@@ -7,6 +7,40 @@
         viAlias = true;
         vimAlias = true;
 
+        keymaps = [
+          # Addinf Fugit keymaps
+          {
+            mode = ["n"];
+            key = "<leader>gf";
+            action = "<cmd>Fugit2<cr>";
+            options = {
+              silent = true;
+              noremap = true;
+              desc = "Fugit";
+            };
+          }
+          {
+            mode = ["n"];
+            key = "<leader>gb";
+            action = "<cmd>Fugit2Blame<cr>";
+            options = {
+              silent = true;
+              noremap = true;
+              desc = "Fugit Blame";
+            };
+          }
+          {
+            mode = ["n"];
+            key = "<leader>gd";
+            action = "<cmd>Fugit2Diff<cr>";
+            options = {
+              silent = true;
+              noremap = true;
+              desc = "Fugit Diff";
+            };
+          }
+        ];
+
         # Fugit2 needs to be installed here, this is due to its dependency on
         # libgit2 and how it needs to be linked (with the path)
         extraPlugins = with pkgs.vimUtils; [
