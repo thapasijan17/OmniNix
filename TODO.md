@@ -14,11 +14,15 @@
 - [ ] Update dock config to allow for spacers
 - [ ] update/config starship prompt for development envs and cloud providers
 - [ ] checkout cli/tui tools lazydocker, navi
+- [ ] setup nix shells
 
 ## Nvim todos
 
 - [ ] Markdown table of contents
 - [ ] Look at file management from within NeoVim (get better with oil or use telescope-file-browser etc)
+- [ ] Sort out folding functions
+- [ ] line wrapping
+- [ ] incremental rename
 
 ## Future Deployments
 

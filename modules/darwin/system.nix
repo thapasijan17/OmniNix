@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{pkgs, ...}:
 ###################################################################################
 #
 #  macOS's System configuration
@@ -8,10 +8,6 @@
 #  Incomplete list of macOS `defaults` commands :
 #    https://github.com/yannbertrand/macos-defaults
 #
-#
-#   NOTE: Some options are not supported by nix-darwin directly, manually set them:
-#  1. To avoid conflicts with neovim, disable ctrl + up/down/left/right to switch spaces in:
-#     [System Preferences] -> [Keyboard] -> [Keyboard Shortcuts] -> [Mission Control]
 ###################################################################################
 {
   # Add ability to used TouchID for sudo authentication
@@ -58,7 +54,6 @@
         "com.apple.swipescrolldirection" = false; # Change scroll direction to the sane version
         "com.apple.trackpad.scaling" = 2.0; # Set trackpad speed to be 2
       };
-
 
       loginwindow = {
         GuestEnabled = false; # disable guest user
@@ -149,7 +144,8 @@
 
     keyboard = {
       enableKeyMapping = true;
-      remapCapsLockToControl = true;
+      # dont remap caps here as we can use Karabiner to enable more complex functionality
+      # remapCapsLockToControl = true;
       nonUS.remapTilde = true;
     };
   };

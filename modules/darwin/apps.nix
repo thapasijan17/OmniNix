@@ -11,7 +11,7 @@
     gnugrep # replacee macos's grep
     gnutar # replacee macos's tar
 
-    # darwin only apps
+    # macOS only apps
     utm # virtual machines
     vscode
     dockutil
@@ -69,7 +69,7 @@
       "raycast" # Better Spotlight
       "mullvadvpn" # VPN software
       "cleanmymac" # The ultimate cleaner for your Mac https://macpaw.com"
-
+      "karabiner-elements"
       ## Internet Apps
       "discord" # Internet Chat"
       "google-chrome"
