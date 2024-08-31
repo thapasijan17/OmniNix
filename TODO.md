@@ -3,6 +3,7 @@
 ## Priority Todos
 
 - [ ] Configure Just
+- [ ] Configure Zellij Layouts
 
 ## General Todos
 
