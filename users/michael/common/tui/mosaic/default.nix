@@ -58,7 +58,7 @@
         ];
         extraConfigLua = ''
           require('fugit2').setup{
-            libgit2_path = '${pkgs.libgit2.outPath}/lib/libgit2.1.7.2.dylib',
+            libgit2_path = '${pkgs.libgit2.outPath}/lib/libgit2.${pkgs.libgit2.version}.dylib',
             external_diffview = true,
           }
         '';
