@@ -3,7 +3,6 @@
 ## Priority Todos
 
 - [ ] Configure Just
-- [ ] Configure Zellij Layouts
 
 ## General Todos
 
@@ -13,7 +12,8 @@
 - [ ] Update dock config to allow for spacers
 - [ ] update/config starship prompt for development envs and cloud providers
 - [ ] checkout cli/tui tools lazydocker, navi
-- [ ] setup nix shells
+- [ ] setup nix shell
+- [ ] separate brew apps of different types
 - [ ] Karabiner configs: <https://github.com/mattsawyer77/nix-configuration/blob/7b099354e249fa73b3c31418d604953a09f94199/home/karabiner/default.nix#L474>
 
 ## Nvim todos
@@ -32,6 +32,7 @@
 
 ## Done
 
+- [x] Configure Zellij Layouts
 - [x] git aliases
 - [x] fix autocomplete on zsh so that complete isnt done with only right arrow
 - [x] I think i should move all keymaps to one file

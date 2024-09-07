@@ -24,6 +24,10 @@ in {
       #Common Darwin Modules
       "modules/darwin"
 
+      # Deskotop Brew Apps
+      "modules/darwin/apps/desktop.nix" # rename to modelling?
+      # "modules/darwin/apps/office.nix"
+
       #User configs for Michael
       "users/michael"
     ]);
