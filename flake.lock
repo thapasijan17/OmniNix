@@ -509,11 +509,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1725749570,
-        "narHash": "sha256-V0UMnUlydF8H/h6w88hSASj67v8YaT8sX5NCp0rPxBM=",
+        "lastModified": 1725753636,
+        "narHash": "sha256-VDGmpjK52vMfb5JQr8VBVhzVOHpjs79aL2FQ36+0x+k=",
         "ref": "refs/heads/main",
-        "rev": "8032c18cb35bb86bf8da5d9c5d49c249c393f0d6",
-        "revCount": 70,
+        "rev": "e1e05cc27424712b6ab7c823e377382715041fde",
+        "revCount": 71,
         "type": "git",
         "url": "ssh://git@github.com/mcgilly17/Mosaic"
       },
