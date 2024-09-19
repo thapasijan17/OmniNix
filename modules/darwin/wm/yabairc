@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-
 # Per app configs
 yabai -m rule --add app="^iTerm2$" space=1
 yabai -m rule --add app="^kitty$" space=1
