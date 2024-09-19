@@ -10,7 +10,7 @@
         else 11;
     };
     settings = {
-      background_opacity = "0.95";
+      background_opacity = "0.98";
       scrollback_lines = 4000;
       scrollback_pager_history_size = 2048;
       enable_audio_bell = false;
