@@ -59,8 +59,8 @@
     taps = [
     ];
 
+    # `brew install`
     brews = [
-      # `brew install`
       "m-cli"
     ];
 
@@ -98,20 +98,7 @@
       # "suspicious-package" #An Application for Inspecting macOS Installer Packages https://www.mothersruin.com/software/SuspiciousPackage/"
       # "gpg-suite" #Everything you need to get started with secure communication and encrypting files in one simple package"
 
-      ## Development
-
-      #  "google-cloud-sdk" #The Cloud SDK is a set of tools for Cloud Platform. It contains gcloud, gsutil, and bq, which you can use to access Google Compute Engine https://cloud.google.com/sdk/"
-      # "iterm2" #iTerm2 is a replacement for Terminal and the successor to iTerm https://www.iterm2.com/"
-      # "postman" #Postman helps you be more efficient while working with APIs. Using Postman, you can construct complex HTTP requests quickly, organize them in collections,etc. https://www.getpostman.com/"
-      # "studio-3t" #Studio 3T, the most powerful MongoDB GUI and IDE available https://studio3t.com/"
-      # "docker-edge" #Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud https://www.docker.com/"
-      # "docker-compose" #Compose is a tool for defining and running multi-container Docker applications https://docs.docker.com/compose/"
-      # "ngrok" #ngrok provides a real-time web UI where you can introspect all HTTP traffic running over your tunnels https://ngrok.com/"
-      # "minikube" #Minikube is a tool that makes it easy to run Kubernetes locally https://github.com/kubernetes/minikube"
-      # "reactotron" #unclear"
-
       ## Entertainment
-      # "spotify" #Spotify is a digital music service that gives you access to millions of songs https://www.spotify.com/"
       # "vlc" #VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, etc. https://www.videolan.org/vlc/index.en-GB.html"
       # "steam" #Steam is a digital distribution platform for video games developed by Valve Corporation, which offers digital rights management, multiplayer servers, video streaming, and social networking services https://store.steampowered.com/"
       # "plex-media-player" #Plex media player"
@@ -131,11 +118,8 @@
 
       # "ubersicht" #Übersicht lets you run system commands and display their output on your desktop in little containers http://tracesof.net/uebersicht/"
       # "syntax-highlight" #unclear"
-      # "1password-cli" #unclear"
-      # "fantastical" #unclear"
       # "numi" #unclear"
       # "via" #unclear"
-      # "brooklyn" #unclear"
       # "suspicious-package" #unclear"
 
       ## QuickLook plugins

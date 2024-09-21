@@ -25,8 +25,9 @@ in {
       "modules/darwin"
 
       # Deskotop Brew Apps
-      "modules/darwin/apps/desktop.nix" # rename to modelling?
-      # "modules/darwin/apps/office.nix"
+      "modules/darwin/apps/desktop.nix"
+      "modules/darwin/apps/creative.nix"
+      "modules/darwin/apps/development.nix"
 
       #User configs for Michael
       "users/michael"
