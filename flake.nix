@@ -19,8 +19,7 @@
 
     # Mac OS management through Darwin
     darwin = {
-      # url = "github:LnL7/nix-darwin";
-      url = "github:LnL7/nix-darwin?rev=db92fac3a9552ac3338977dcaf4cd15acf4aac08";
+      url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
