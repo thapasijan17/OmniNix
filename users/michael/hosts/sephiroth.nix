@@ -1,5 +1,8 @@
-{ pkgs, specialArgs, ... }:
 {
+  pkgs,
+  specialArgs,
+  ...
+}: {
   imports = [
     # import Darwin specific configs
     ../darwin
@@ -11,6 +14,6 @@
     ../common/shells
     ../common/desktop
     ../common/desktop/terminals
-
+    # ../common/desktop/creative
   ];
 }
