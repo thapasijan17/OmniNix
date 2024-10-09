@@ -74,6 +74,7 @@
       ## Internet Apps
       "discord" # Internet Chat"
       "google-chrome"
+      "reader"
 
       # Entertainment
       "vlc" #VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, etc. https://www.videolan.org/vlc/index.en-GB.html
