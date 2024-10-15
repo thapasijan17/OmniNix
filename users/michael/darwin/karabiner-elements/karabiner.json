@@ -41,6 +41,18 @@
       },
       "name": "Michaels profile",
       "selected": true,
+      "simple_modifications": [
+        {
+          "from": {
+            "key_code": "escape"
+          },
+          "to": [
+            {
+              "key_code": "vk_none"
+            }
+          ]
+        }
+      ],
       "virtual_hid_keyboard": {
         "indicate_sticky_modifier_keys_state": false
       }
