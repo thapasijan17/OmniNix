@@ -29,7 +29,7 @@
       url = "github:zhaofengli-wip/nix-homebrew";
     };
 
-    # Secrets management. See ./docs/secretsmgmt.md
+    # Secrets management
     sops-nix = {
       url = "github:mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -62,7 +62,7 @@
     # Authenticate via ssh and use shallow clone
     nix-secrets = {
       url = "git+ssh://git@github.com/mcgilly17/nix-secrets.git?ref=main&shallow=1";
-      flake = false;
+      inputs = {};
     };
     mosaic = {
       url = "git+ssh://git@github.com/mcgilly17/Mosaic";

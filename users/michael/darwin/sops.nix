@@ -1,11 +1,13 @@
 # User level sops configuration
-{ inputs, config, ... }:
-let
+{
+  inputs,
+  config,
+  ...
+}: let
   secretsDirectory = builtins.toString inputs.nix-secrets;
   secretsFile = "${secretsDirectory}/secrets.yaml";
   homeDirectory = config.home.homeDirectory;
-in
-{
+in {
   imports = [
     inputs.sops-nix.homeManagerModules.sops
   ];
@@ -21,7 +23,7 @@ in
       # "private_keys/michael" = {
       #   path = "${homeDirectory}/.ssh/id_ed25519_nix";
       # };
+      openAIKey = {};
     };
   };
-
 }

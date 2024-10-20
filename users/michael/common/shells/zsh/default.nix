@@ -1,5 +1,9 @@
-{ pkgs, config, ... }: {
-
+{
+  pkgs,
+  config,
+  myVars,
+  ...
+}: {
   programs.zsh = {
     enable = true;
     autocd = true;
@@ -15,7 +19,7 @@
       extended = true;
       save = 5000;
       size = 5000;
-      ignorePatterns = [ "rm *" ];
+      ignorePatterns = ["rm *"];
       ignoreDups = true; # makes searching history faster
       ignoreAllDups = true;
       ignoreSpace = true;
@@ -55,7 +59,6 @@
       }
     ];
 
-
     initExtraFirst = ''
       # macos upgrades might nix install: https://github.com/NixOS/nix/issues/3616
       if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
@@ -76,7 +79,10 @@
 
     envExtra = ''
       ${builtins.readFile ./zshenv}
+      export OPENAI_API_KEY=$(cat ${config.sops.secrets."openAIKey".path})
     '';
+
+    #
 
     shellAliases = {
       ll = "eza --group --header --group-directories-first --long --git --all --icons --sort name";
@@ -89,6 +95,5 @@
     shellGlobalAliases = {
       G = "| grep";
     };
-
   };
 }

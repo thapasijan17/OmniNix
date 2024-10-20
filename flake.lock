@@ -357,11 +357,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1729362142,
-        "narHash": "sha256-1Mx6tQZQEDSYdOK5lTzUOjxOmrJgWieZ8XjfvCbTDpk=",
+        "lastModified": 1729403529,
+        "narHash": "sha256-S/C9dFNivG1LCYZHptOlPHd4RngjGnb1RGZCpGeUUXQ=",
         "ref": "refs/heads/main",
-        "rev": "0d7b4c09edfe18e10f2a7e52e34901da81cf43da",
-        "revCount": 82,
+        "rev": "1247ce4cfd7694b9d0a7c403850cccb36a77e014",
+        "revCount": 83,
         "type": "git",
         "url": "ssh://git@github.com/mcgilly17/Mosaic"
       },
@@ -447,12 +447,11 @@
       }
     },
     "nix-secrets": {
-      "flake": false,
       "locked": {
-        "lastModified": 1721710548,
-        "narHash": "sha256-6GnWndlvS/+HJULSrwm2TVTk9YiquRDK1i3tjNZlBK0=",
+        "lastModified": 1729402595,
+        "narHash": "sha256-iIyQ8SssJgAo9ZFQbpJXjjGazG506w9vnXhXMbj+cVc=",
         "ref": "main",
-        "rev": "bde73aff20937858b53da8ebcf49a4f4062edf45",
+        "rev": "cd245458adc58e465d54939aaa175ea2b4610317",
         "shallow": true,
         "type": "git",
         "url": "ssh://git@github.com/mcgilly17/nix-secrets.git"
