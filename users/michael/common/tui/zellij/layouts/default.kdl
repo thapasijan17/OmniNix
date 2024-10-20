@@ -18,6 +18,10 @@ layout {
     tab name="Shell" focus=true hide_floating_panes=true {
       pane cwd="/Users/michael"
     }
+
+    tab name="Projects" hide_floating_panes=true {
+      pane cwd="/Users/michael/Projects/"
+    }
     tab name="Files" hide_floating_panes=true {
       pane cwd="Users/michael" command="yazi"
     }
