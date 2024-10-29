@@ -19,11 +19,11 @@ layout {
       pane cwd="/Users/michael"
     }
 
-    tab name="Projects" hide_floating_panes=true {
-      pane cwd="/Users/michael/Projects/"
-    }
     tab name="Files" hide_floating_panes=true {
       pane cwd="Users/michael" command="yazi"
+    }
+    tab name="Projects" hide_floating_panes=true {
+      pane cwd="/Users/michael/Projects/"
     }
     tab name="Dots" hide_floating_panes=true {
         pane cwd="Projects/dots"
