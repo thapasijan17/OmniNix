@@ -14,15 +14,18 @@ in {
 
   sops = {
     # This is the location of the host specific age-key for michael
-    age.keyFile = "${homeDirectory}/.config/sops/age/keys.txt";
+    age = {
+      # this will use an age key that is expected to already to be in the file system
+      keyFile = "${homeDirectory}/.config/sops/age/keys.txt";
+    };
 
     defaultSopsFile = "${secretsFile}";
     validateSopsFiles = false;
 
     secrets = {
-      # "private_keys/michael" = {
-      #   path = "${homeDirectory}/.ssh/id_ed25519_nix";
-      # };
+      "private_keys/michael" = {
+        path = "${homeDirectory}/.ssh/id_ed25519_nix";
+      };
       openAIKey = {};
     };
   };
