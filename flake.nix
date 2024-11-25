@@ -108,11 +108,11 @@
           ./hosts/sephiroth
         ];
       };
-      bowser = darwin.lub.darwinSystem {
+      bowser = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         inherit specialArgs;
         modules = [
-          .hosts/bowser
+          /hosts/bowser
         ];
       };
     };
