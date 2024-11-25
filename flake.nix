@@ -112,7 +112,7 @@
         system = "aarch64-darwin";
         inherit specialArgs;
         modules = [
-          /hosts/bowser
+          ./hosts/bowser
         ];
       };
     };
