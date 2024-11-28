@@ -8,7 +8,7 @@ Please dont take any of this repo as my own work. I am merely standing on the sh
 
 > [!IMPORTANT]
 >
-> **Disclaimer:** _This config is currently only setup to work with one macOS host_ some boilerplate
+> **Disclaimer:** _This config is currently only setup to work with two macOS hosts_ some boilerplate
 > is baked in for when I expand the configs to my WS2 rig, Linux machines and servers.
 
 ## Table of Contents
