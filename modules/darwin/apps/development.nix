@@ -1,6 +1,9 @@
 {pkgs, ...}: {
   ### Creative applications
   homebrew = {
+    brews = [
+      "python@3.10"
+    ];
     casks = [
       "godot"
       ## Development
