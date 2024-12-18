@@ -30,6 +30,8 @@
       # enable flakes globally
       experimental-features = ["nix-command" "flakes"];
 
+      trusted-users = ["root" "@admin"];
+
       # See https://jackson.dev/post/nix-reasonable-defaults/
       connect-timeout = 5;
       log-lines = 25;
