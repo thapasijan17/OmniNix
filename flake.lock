@@ -305,11 +305,11 @@
     "homebrew-bundle": {
       "flake": false,
       "locked": {
-        "lastModified": 1734658245,
-        "narHash": "sha256-Ja+KSNmsIdOARfjnuEUwlWd5jkwbHJ3Ww8WKpW9TY/U=",
+        "lastModified": 1734744977,
+        "narHash": "sha256-s0aJ6HVtKKSVgwScgMy6+Jemfz3/WwLUoaVfTkMuADw=",
         "owner": "homebrew",
         "repo": "homebrew-bundle",
-        "rev": "63b2f10dcd3c77ff96a63aaaa7307b8514723cd3",
+        "rev": "b8cd6f13188052a214c395605965b67185c304b8",
         "type": "github"
       },
       "original": {
@@ -321,11 +321,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1734736499,
-        "narHash": "sha256-J0+mE9+osStJUauyu1AdhKztFH8uvIOtTAVY5w4XJwk=",
+        "lastModified": 1734768567,
+        "narHash": "sha256-g5jyKCLyh/m9LisrsoksvQrIDFCrbYWhK7ztGFgOsjQ=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "215c243a755c26db4d501f3352e48d0e318cb5e3",
+        "rev": "163fb9a3a0cef132bd5ed555e09d9e583a44d196",
         "type": "github"
       },
       "original": {
@@ -337,11 +337,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1734737030,
-        "narHash": "sha256-Q/daGg2a4dfKWqFTPc9rKbTnP2GoKcKQEOwV09/9XNg=",
+        "lastModified": 1734763525,
+        "narHash": "sha256-gVmbLfdb8JzqVVK01d+sInARhsIZTHxUWQtr7g9O2mA=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "6d535b9ac4dfa83d2ed2ac4656570305ace768a7",
+        "rev": "e545a9210d40bdafa42b235a5262c8e3519b0e41",
         "type": "github"
       },
       "original": {
@@ -387,11 +387,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1734482784,
-        "narHash": "sha256-kMc/GbpTI8CSC6aVgwxXpQWdEfxiQr2cbI5teWC5IEg=",
+        "lastModified": 1734769751,
+        "narHash": "sha256-rx5J5klCr5v2QMkTycm+ztNjtiAwxXcL2PoS/0kM9ik=",
         "ref": "refs/heads/main",
-        "rev": "29142836c5a576a3141ee39ce5f29cd682142827",
-        "revCount": 95,
+        "rev": "c9310d4a38a9fb207bd7f7ad24de5bee2411d3f4",
+        "revCount": 96,
         "type": "git",
         "url": "ssh://git@github.com/mcgilly17/Mosaic"
       },
