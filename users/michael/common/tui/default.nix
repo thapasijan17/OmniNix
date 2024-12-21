@@ -17,6 +17,14 @@
     enable = true;
     flavor = "mocha";
     accent = "sapphire";
+    k9s = {
+      enable = true;
+      flavor = "macchiato";
+    };
+    btop = {
+      enable = true;
+      flavor = "frappe";
+    };
   };
 
   home.packages = with pkgs; [
@@ -107,6 +115,9 @@
     selene
     eslint_d
     nodePackages.jsonlint
+    nodePackages."@prisma/language-server"
+    tailwindcss-language-server
+    emmet-language-server
     checkstyle
     markdownlint-cli2
     typescript
