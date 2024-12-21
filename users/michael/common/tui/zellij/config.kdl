@@ -13,7 +13,7 @@ keybinds clear-defaults=true {
         bind "Alt z" { SwitchToMode "Normal"; }
     }
     resize {
-        bind "Alt r" { SwitchToMode "Normal"; }
+        bind "Alt R" { SwitchToMode "Normal"; }
         bind "h" { Resize "Increase Left"; }
         bind "j" { Resize "Increase Down"; }
         bind "k" { Resize "Increase Up"; }
