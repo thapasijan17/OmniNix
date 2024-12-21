@@ -116,7 +116,6 @@
     eslint_d
     nodePackages.jsonlint
     nodePackages."@prisma/language-server"
-    tailwindcss-language-server
     emmet-language-server
     checkstyle
     markdownlint-cli2
