@@ -105,6 +105,7 @@
     socat
     neofetch
     devenv
+    watchman
 
     # Neovim LSP and other pkgs
     prettierd
