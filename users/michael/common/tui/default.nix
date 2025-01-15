@@ -106,6 +106,7 @@
     neofetch
     devenv
     watchman
+    nodejs_23
 
     # Neovim LSP and other pkgs
     prettierd
