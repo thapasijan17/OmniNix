@@ -24,6 +24,7 @@ in {
 
     secrets = {
       "private_keys/michael" = {
+        mode = "0600";
         path = "${homeDirectory}/.ssh/id_ed25519";
       };
       openAIKey = {};
