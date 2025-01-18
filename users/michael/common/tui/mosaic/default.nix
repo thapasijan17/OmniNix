@@ -51,8 +51,8 @@
             src = pkgs.fetchFromGitHub {
               owner = "SuperBo";
               repo = "fugit2.nvim";
-              rev = "e8b262d3f974a301b9efae98a571e6c9e635ab16";
-              sha256 = "sha256-U9Ve7mgJlQwArgDBOXC2ezaaG7zIOJalLEl5Hyw2jMA=";
+              rev = "96f729a4bdcf44174c6168f4457b9f3f9229efa2";
+              sha256 = "sha256-+T/fiPQDRThyeDuzlwilSWFLW3asoG2gWALy+qVIMZQ=";
             };
           })
         ];
