@@ -78,5 +78,5 @@ in {
   };
 
   # as per https://daiderd.com/nix-darwin/manual/index.html#opt-system.stateVersion
-  system.stateVersion = 4; # Did you read the comment?
+  system.stateVersion = 5; # Did you read the comment?
 }

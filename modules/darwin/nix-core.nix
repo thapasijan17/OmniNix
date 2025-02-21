@@ -19,7 +19,7 @@
   nixpkgs.overlays = builtins.attrValues outputs.overlays;
 
   # Auto upgrade the nix-daemon service.
-  services.nix-daemon.enable = true;
+  # services.nix-daemon.enable = true;
 
   # Disable auto-optimise-store because of this issue:
   #   https://github.com/NixOS/nix/issues/7273
