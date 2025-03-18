@@ -34,7 +34,7 @@
 
   # custom log path for debugging
   launchd.user.agents.yabai.serviceConfig = let
-    homeDir = config.users.users.michael.home;
+    homeDir = config.users.users.omninix.home;
   in {
     StandardErrorPath = "${homeDir}/Library/Logs/yabai.stderr.log";
     StandardOutPath = "${homeDir}/Library/Logs/yabai.stdout.log";

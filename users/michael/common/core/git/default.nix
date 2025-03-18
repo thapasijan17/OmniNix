@@ -5,7 +5,7 @@
   specialArgs,
   ...
 }: let
-  inherit (specialArgs.myVars.users) michael;
+  inherit (specialArgs.myVars.users) omninix;
   aliases = import ./aliases.nix;
   ignores = import ./ignores.nix;
 in {
@@ -30,8 +30,8 @@ in {
 
     lfs.enable = true;
     package = pkgs.gitAndTools.gitFull;
-    userName = michael.handle;
-    userEmail = michael.gitEmail;
+    userName = omninix.handle;
+    userEmail = omninix.gitEmail;
 
     # Enable different config for work when
     # includes = [

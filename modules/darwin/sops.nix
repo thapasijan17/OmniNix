@@ -18,7 +18,7 @@ in {
       generateKey = true;
     };
     secrets = {
-      michaelEmail = {};
+      omninixEmail = {};
     };
   };
 }

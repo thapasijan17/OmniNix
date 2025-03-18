@@ -13,7 +13,7 @@
   ...
 }: let
   hostname = "sephiroth";
-  inherit (specialArgs.myVars.users) michael;
+  inherit (specialArgs.myVars.users) omninix;
 in {
   imports =
     [
@@ -29,8 +29,8 @@ in {
       "modules/darwin/apps/creative.nix"
       "modules/darwin/apps/development.nix"
 
-      #User configs for Michael
-      "users/michael"
+      #User configs for OmniNix
+      "users/omninix"
     ]);
 
   #################### Host specific Darwin Configs ####################
@@ -61,7 +61,7 @@ in {
     enableRosetta = false;
 
     # User owning the Homebrew prefix
-    user = "michael";
+    user = "omninix";
 
     # Optional: Declarative tap management
     taps = {

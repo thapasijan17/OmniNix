@@ -4,15 +4,15 @@
 , ...
 }:
 let
-  inherit (specialArgs.myVars.users) michael;
+  inherit (specialArgs.myVars.users) omninix;
 in
 {
-  # Define the user account for michael.
-  users.users."${michael.username}" = {
-    home = "/Users/${michael.username}";
-    description = "${michael.userFullName}";
+  # Define the user account for omninix.
+  users.users."${omninix.username}" = {
+    home = "/Users/${omninix.username}";
+    description = "${omninix.userFullName}";
   };
 
-  # Import Michael's home manager configuration for the current host.
-  home-manager.users.${michael.username} = import (specialArgs.myLibs.relativeToRoot "users/${michael.username}/hosts/${config.networking.hostName}.nix");
+  # Import omninix's home manager configuration for the current host.
+  home-manager.users.${omninix.username} = import (specialArgs.myLibs.relativeToRoot "users/${omninix.username}/hosts/${config.networking.hostName}.nix");
 }

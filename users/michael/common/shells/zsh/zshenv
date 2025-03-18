@@ -11,5 +11,5 @@ export LESSOPEN='|~/.config/.lessfilter %s'
 export BAT_STYLE=numbers,changes
 
 # for some reason this needs to be explicit on mac OS, this will need to be fixed for linux builds
-export SOPS_AGE_KEY_FILE='/Users/michael/.config/sops/age/keys.txt'
+export SOPS_AGE_KEY_FILE='/Users/omninix/.config/sops/age/keys.txt'
 

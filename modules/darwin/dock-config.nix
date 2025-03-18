@@ -3,7 +3,7 @@
   myVars,
   ...
 }: let
-  user = myVars.users.michael.username;
+  user = myVars.users.omninix.username;
 in {
   # Fully declarative dock using the latest from Nix Store
   local = {

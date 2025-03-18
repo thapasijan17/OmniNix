@@ -1,10 +1,10 @@
-<h1 align="center">:snowflake: McGilly17's Nix Config :snowflake:</h1>
+<h1 align="center">:snowflake: OmniNix's Nix Config :snowflake:</h1>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="400" />
 </p>
 
-Please dont take any of this repo as my own work. I am merely standing on the shoulders of giants like Ryan Yin, Emergent Mind, Mysterio77 and about 100 others. My dotfiles are a frankenstein made from many of [these](#acknowledgements) amazing engineers work.
+Please dont take any of this repo as my own work. This dotfiles are a frankenstein made from many of [these](#acknowledgements) amazing engineers work.
 
 > [!IMPORTANT]
 >
@@ -87,12 +87,6 @@ The strucutre allows for many hosts (nixos, darwin and probably WS2?) and many u
 
 Secrets for this config are stored in a private repository called nix-secrets that is pulled in as a flake input and managed using the sops-nix tool.
 
-If you have any questions about secrets using nix. Please see the following epic resources:
-
-- [EmergentMind's Spectacular Youtube Series](https://www.youtube.com/watch?v=6EMNHDOY-wo)
-- [LGUG2Z's Epic blog post that explains the different options you have when encrypting with nix](https://lgug2z.com/articles/handling-secrets-in-nixos-an-overview/)
-- Ryan4Yin and Misterio77 also have implementations that are worth looking at.
-
 ## Usage
 
 > [!IMPORTANT]
@@ -116,13 +110,12 @@ use Just files and many other fun things.
 
 I have about 1million questions on Nix and will ask them in due course on discourse. However, if anyone stumbles upon this and has answers, please let me know!
 
-- Is there anywhere documented in the nix world a place where I can see how maintainers of NixPkgs convert the configurations in nix into the format the underlying package needs. For Example: [gitui](https://github.com/extrawurst/gitui), you can pass the key `keyConfig` into the [nix config](/users/michael/common/tui/gitui.nix), it is a multi line string with all the keybindings. Now, in the [Gitui NixPkgs](https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/gi/gitui/package.nix#L56) to me, it wasnt immediately obvious that this was how you do this. Is there a dictionary of these things somewhere that I havent found?
+- Is there anywhere documented in the nix world a place where I can see how maintainers of NixPkgs convert the configurations in nix into the format the underlying package needs. For Example: [gitui](https://github.com/extrawurst/gitui), you can pass the key `keyConfig` into the [nix config](/users/OmniNix/common/tui/gitui.nix), it is a multi line string with all the keybindings. Now, in the [Gitui NixPkgs](https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/gi/gitui/package.nix#L56) to me, it wasnt immediately obvious that this was how you do this. Is there a dictionary of these things somewhere that I havent found?
 - When developing actively on this set of configs, every change I make, I have to run a darwin-rebuild and switch out to the new config. When making many small changes this can be pretty time intensive. Is there a better way when in active development (i.e setting up ones NeoVim configs) that allows for much quicker iteration before then migrating to the full nix config?
 
 ## Guidance and Resources
 
-If you are remotely interested in Nix and configs, I found the below a pretty good starting point. I then did the vast majority of my learning
-by looking through other peoples configs and watching @EmergentMind and @VimJoyer's amazing youtube content.
+If you are remotely interested in Nix and configs, I found the below a pretty good starting point. 
 
 - [NixOS & Flakes Book](https://nixos-and-flakes.thiscute.world/) - an excellent introductory book by Ryan Yin
 - [Official Nix Documentation](https://nix.dev)
@@ -140,7 +133,6 @@ Thank you to the amazing engineers work that I have built my dotfiles on top of,
 - [Misterio77] (<https://github.com/Misterio77/nix-config?tab=readme-ov-file>)
 - [EmergentMind] (<https://github.com/EmergentMind/nix-config>)
 - [ryan4yin] (<https://github.com/ryan4yin/nix-config/tree/main>)
-- [redyf] (<https://github.com/redyf/Neve>)
 - [pietersp] (<https://github.com/pietersp/dotfiles>)
 - [Zumorica] (<https://github.com/Zumorica/GradientOS/>)
 - [ritiek] (<https://github.com/ritiek/dotfiles>)

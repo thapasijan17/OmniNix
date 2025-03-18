@@ -1,7 +1,7 @@
 {inputs, ...}: {
   users = {
-    michael = {
-      username = "michael";
+    omninix = {
+      username = "omninix";
       handle = "McGilly17";
       gitEmail = "4136843+mcgilly17@users.noreply.github.com";
       userFullName = inputs.nix-secrets.name;

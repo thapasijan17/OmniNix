@@ -12,7 +12,7 @@
     gnutar # replacee macos's tar
 
     # macOS only apps
-    # TODO: decide if these should be moved to /users/michael/darwin/default.nix
+    # TODO: decide if these should be moved to /users/omninix/darwin/default.nix
     utm # virtual machines
     vscode
     dockutil

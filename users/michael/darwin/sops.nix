@@ -13,7 +13,7 @@ in {
   ];
 
   sops = {
-    # This is the location of the host specific age-key for michael
+    # This is the location of the host specific age-key for omninix
     age = {
       # this will use an age key that is expected to already to be in the file system
       keyFile = "${homeDirectory}/.config/sops/age/keys.txt";
@@ -23,7 +23,7 @@ in {
     validateSopsFiles = false;
 
     secrets = {
-      "private_keys/michael" = {
+      "private_keys/omninix" = {
         mode = "0600";
         path = "${homeDirectory}/.ssh/id_ed25519";
       };
